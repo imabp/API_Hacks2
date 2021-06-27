@@ -1,0 +1,23 @@
+.heading {
+    display: flex;
+    flex-direction: row;
+    font-size: 50px;
+    text-align: left;
+    justify-content:flex-end;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+    font-weight: bolder;
+}
+
+.title {
+    font-size: 1em;
+}
+
+.version {
+    padding-left: 20px;
+    font-size: 2.5em;
+    color: rgb(253, 203, 1);
+}
