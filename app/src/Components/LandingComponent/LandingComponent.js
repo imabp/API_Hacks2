@@ -1,10 +1,13 @@
 import React from 'react'
+import Heading from '../Heading/Heading'
+import Navbar from '../Navbar/Navbar'
 import "./LandingComponent.css"
 
 function LandingComponent() {
     return (
         <div className="landing">
-            API HACKS 2.0
+            <Navbar />
+            <Heading />
         </div>
     )
 }
