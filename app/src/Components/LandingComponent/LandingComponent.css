@@ -1,0 +1,7 @@
+.landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    width: max-content;
+}
