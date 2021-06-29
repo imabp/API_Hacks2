@@ -3,9 +3,9 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    padding: 0px 40px;
+    width: 50vw;
 }
 
 img {
-    width: 45vw
+   width: inherit; 
 }
