@@ -1,9 +1,22 @@
 .landing {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    width: auto;
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: auto;
+  margin: auto;
+}
+.btn {
+  background-color: #fecb00;
+  height: 3rem;
+  width: 12rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
 }
