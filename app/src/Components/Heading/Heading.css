@@ -1,20 +1,15 @@
-.heading {
-  display: flex;
-}
+
 .title {
-  text-align: left;
-  font-size: 3.5rem;
+   text-align: left;
+   font-size: 8rem;
   font-weight: bold;
+
 }
 .version {
-  position: absolute;
-  font-size: 10.5rem;
   font-weight: bold;
-  right: 2.5rem;
-  top: 4rem;
   color: #fecb00;
 }
 .text {
   font-size: 2rem;
-  position: absolute;
+  
 }
