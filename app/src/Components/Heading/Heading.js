@@ -1,6 +1,6 @@
 import React from "react";
 import "./Heading.css";
-import Typist from "react-typist";
+
 
 function Heading() {
   return (
