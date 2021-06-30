@@ -1,22 +1,20 @@
 import React from "react";
 import "./Heading.css";
+import { Grid } from "@material-ui/core";
 import Typist from "react-typist";
 
 function Heading() {
   return (
     <>
-      <div className="heading">
-        <div className="title">
-          <p>
+      <Grid container>
+        <Grid item xs={12} sm={12} md={12} lg={12}>
+          <h1 className="title">
+            {" "}
             API
-            <br />
-            HACKS
-          </p>
-        </div>
-        <div className="version">
-          <p>2.0</p>
-        </div>
-      </div>
+            <br /> HACKS <span className="version"> 2.0</span>{" "}
+          </h1>
+        </Grid>
+      </Grid>
     </>
   );
 }
