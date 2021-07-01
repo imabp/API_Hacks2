@@ -8,7 +8,7 @@ function Navbar() {
                 <li><a href=".">Home</a></li>
                 <li><a href=".">Team</a></li>
                 <li><a href=".">Register</a></li>
-                <li><a href=".">Sponsers</a></li>
+                <li><a href=".">Sponsors</a></li>
             </ul>
         </div>
     )
