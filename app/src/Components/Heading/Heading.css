@@ -1,15 +1,21 @@
-
-.title {
-   text-align: left;
-   font-size: 8rem;
+.heading-container {
+  display: flex;
+  font-size: 20px;
   font-weight: bold;
-
+  text-align: left;
+  align-items: flex-end;
 }
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5em;
+  line-break: auto;
+  margin: auto;
+}
+
 .version {
-  font-weight: bold;
-  color: #fecb00;
-}
-.text {
-  font-size: 2rem;
-  
+  font-size: 7em;
+  padding-left: 0.1em;
+  color: rgb(253, 203, 1);
 }
