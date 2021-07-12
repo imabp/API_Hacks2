@@ -5,7 +5,7 @@ import Icon from './image.svg'
 function ImageComponent() {
   return (
     <div className="image-component">
-      <img src={Icon} width="80%"/>
+      <img src={Icon} width="90%"/>
     </div>
   );
 }
