@@ -18,6 +18,8 @@
   font-size: 1rem;
   border-radius: 50px;
   cursor: pointer;
+  transition: all 0.5s ease-out;
+  margin-top: 1em;
 }
 
 a {
@@ -28,5 +30,5 @@ a {
 .btn:hover,
 .btn:focus {
   box-shadow: 0 0.5em 1em -0.4em #fecb00ad;
-  transform: translateY(-0.25em);
+  transform: translateY(-0.2em);
 }
