@@ -9,7 +9,7 @@ function LandingComponent() {
     <div className="landing">
       <Navbar />
       <Heading />
-      <a href="https://discord.apihacks.co" target="_blank" rel="noopener noreferrer"className="btn">Join Discord</a>
+      <a href="https://discord.apihacks.co" target="_blank" rel="noopener noreferrer" className="btn">Join Discord</a>
     </div>
   );
 }
