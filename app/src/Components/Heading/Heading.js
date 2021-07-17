@@ -11,7 +11,7 @@ function Heading() {
       </div>
       <div className="version">2.0</div>
     </div>
-    <div className="sub-heading">Build a Digital Footprint with API Hacks</div>
+    <div className="sub-heading">Build your Digital Footprint with API Hacks</div>
     </>
   );
 }
