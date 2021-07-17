@@ -1,0 +1,8 @@
+.image-component {
+    background-color: rgb(253, 203, 1);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 50vw;
+}
+
