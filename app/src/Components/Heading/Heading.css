@@ -1,9 +1,10 @@
 .heading-container {
   display: flex;
   font-size: 20px;
+  justify-content: center;
+  align-content: center;
   font-weight: bold;
   text-align: left;
-  align-items: flex-end;
 }
 
 .heading {
@@ -21,5 +22,20 @@
 }
 
 .sub-heading{
-  font-size: 1.5em;
+  font-size: 21px;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading-container {
+    font-size: 15px;
+  }
+  .sub-heading{
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .heading-container {
+    font-size: 10px;
+  }
 }
