@@ -1,4 +1,19 @@
 .App {
   text-align: center;
   display: flex;
+  font-family: 'Fira Code';
+}
+
+li {
+  margin: 15px auto;
+}
+
+.nav-link {
+  @apply p-2 items-center w-10/12 self-center;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+}
+
+.nav-background {
+  background: #E19C4B;
 }
