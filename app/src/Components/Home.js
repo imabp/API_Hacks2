@@ -3,7 +3,10 @@ import React from 'react'
 function Home() {
     return (
         <div>
-            efn
+            <div className="text-5xl">
+                API HACKS <br></br>
+                2.0
+            </div>
         </div>
     )
 }

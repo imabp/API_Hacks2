@@ -14,6 +14,7 @@ li {
   border-radius: 20px;
 }
 
-.nav-background {
+.nav {
   background: #E19C4B;
+  width: 35%;
 }
