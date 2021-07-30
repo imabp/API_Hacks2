@@ -2,15 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "FiraCode-Regular";
+  src: local("FiraCode-Regular.ttf"),
+    url("./fonts/FiraCode-Regular.ttf") format("truetype");
+}
+
 body {
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-
-@font-face {
-  font-family: 'Fira Code';
-  src: local('Fira Code'), url(./fonts/FiraCode-Retina.ttf) format('truetype');
+  font-family: "FiraCode-Regular";
 }
