@@ -49,7 +49,7 @@ function App() {
               <Link to="/workshop">Awesome Workshops</Link>
             </li>
             <li className="nav-link"> 
-              <Link to="/sponsers">Sponsers</Link>
+              <Link to="/sponsors">Sponsors</Link>
             </li>
             <li className="nav-link">
               <Link to="/blog">Our Hacker Blog</Link>
