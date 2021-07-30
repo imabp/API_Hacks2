@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 
 import Home from "./Components/Home"
-import Sponsor from './Components/Sponser';
+import Sponsor from './Components/Sponsor';
 import Workshop from "./Components/Workshop";
 import Theme from './Components/Theme'
 
