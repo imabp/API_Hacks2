@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Sponser() {
+function Sponsor() {
     return (
         <div>
-            Sponser page
+            Sponsor page
         </div>
     )
 }
 
-export default Sponser
+export default Sponsor
