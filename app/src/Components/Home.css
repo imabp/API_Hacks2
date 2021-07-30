@@ -1,0 +1,10 @@
+.home {
+    background: #FFF6EB;
+    width: 65%;
+}
+
+.btn {
+    background: rgba(0, 0, 0, 0.315);
+    box-sizing: border-box;
+border-radius: 20px;
+}
