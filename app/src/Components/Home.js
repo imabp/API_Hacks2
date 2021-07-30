@@ -3,7 +3,7 @@ import "./Home.css"
 
 function Home() {
     return (
-        <div className="home text-2xl pl-12 pt-10 h-screen absolute">
+        <div className="home text-xl pl-12 pt-10 h-screen absolute">
             <div className="text-6xl">
                 API Hacks<br></br>
                 <span className="font-black">2.0</span>
