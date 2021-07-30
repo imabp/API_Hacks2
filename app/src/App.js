@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 
 import Home from "./Components/Home"
-import Sponser from './Components/Sponser';
+import Sponsor from './Components/Sponser';
 import Workshop from "./Components/Workshop";
 import Theme from './Components/Theme'
 
@@ -25,7 +25,7 @@ function App() {
 
       <Switch>
       <Route exact path="/" component={Home} />
-        <Route path="/sponsers" component={Sponser} />
+        <Route path="/sponsors" component={Sponsor} />
         <Route path="/theme" component={Theme} />
         <Route path="/workshop" component={Workshop} />
       </Switch>
