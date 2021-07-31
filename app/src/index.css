@@ -15,3 +15,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: "FiraCode-Regular";
 }
+.root {
+  background: #fff6eb;
+}
