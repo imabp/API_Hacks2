@@ -31,7 +31,7 @@ function App() {
       </Switch>
 
 
-        <div className="w-1/3 h-screen absolute right-0 flex nav-background">
+        <div className="w-1/3 h-screen absolute right-0 flex nav">
           <ul className="m-auto w-full flex flex-col justify-center text-center">
             <li>
             What you Looking for?
