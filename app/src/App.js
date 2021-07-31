@@ -1,65 +1,43 @@
-import React from 'react';
-import './App.css';
-
+import React from "react";
+import "./App.css";
+import ROUTES from "./routes";
 // using react router
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-
-import Home from "./Components/Home"
-import Sponsor from './Components/Sponsor';
-import Workshop from "./Components/Workshop";
-import Theme from './Components/Theme'
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Home } from "./Components";
 
 function App() {
   return (
-
     <Router>
-      <div  className="flex flex-row relative">
-
-      {/* A <Switch> looks through its children <Route>s and
-    renders the first one that matches the current URL. */}
-
-      <Switch>
-      <Route exact path="/" component={Home} />
-        <Route path="/sponsors" component={Sponsor} />
-        <Route path="/theme" component={Theme} />
-        <Route path="/workshop" component={Workshop} />
-      </Switch>
-
-
+      <div className="flex flex-row relative">
+        <div className="root w-2/3 h-screen">
+          <Switch>
+            <Route key="/" path="/" exact={true} children={<Home />} />
+            {ROUTES.map((route) => (
+              <Route
+                key={route.path}
+                path={route.path}
+                exact={route.exact}
+                children={<route.component />}
+              />
+            ))}
+          </Switch>
+        </div>
         <div className="w-1/3 h-screen absolute right-0 flex nav">
           <ul className="m-auto w-full flex flex-col justify-center text-center">
-            <li>
-            What you Looking for?
-            <br></br>
-            Might be here ;)
+            <li className="text text-2xl">
+              What you Looking for?
+              <br></br>
+              Might be here ;)
             </li>
-
-            <li className="nav-link"> 
-              <Link to="/what-is-api">What is API hacks ?</Link>
-            </li>
-            <li className="nav-link">
-              <Link to="/theme">Themes</Link>
-            </li>
-            <li className="nav-link"> 
-              <Link to="/workshop">Awesome Workshops</Link>
-            </li>
-            <li className="nav-link"> 
-              <Link to="/sponsors">Sponsors</Link>
-            </li>
-            <li className="nav-link">
-              <Link to="/blog">Our Hacker Blog</Link>
-            </li>
-            <li className="nav-link">
-              <Link to="/hiring">Network and Hiring</Link>
-            </li>
+            {ROUTES.map((route) => (
+              <li className="nav-link">
+                <Link to={route.path} isExternal={route.isExternal}>
+                  <b>{route.displayName}</b>
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
-
       </div>
     </Router>
   );
