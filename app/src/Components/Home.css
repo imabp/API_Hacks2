@@ -1,23 +1,24 @@
 .home {
-    background: #FFF6EB;
-    width: 65%;
-    position: fixed;
+  background: #fff6eb;
+  width: 65%;
+  position: fixed;
 }
 
 .btn {
-    background: rgba(0, 0, 0, 0.315);
-    box-sizing: border-box;
-border-radius: 20px;
+  background: rgba(0, 0, 0, 0.315);
+  box-sizing: border-box;
+  border-radius: 20px;
 }
 
 /* Ellipse 3 */
 .circle::before {
-    content: "";
-position: absolute;
-left: -20vh;
-bottom: -30vh;
-width: 100vh;
-height: 100vh;
-border-radius: 50%;
-background: rgba(196, 196, 196, 0.24);
+  content: "";
+  position: absolute;
+  left: -20vh;
+  bottom: -30vh;
+  width: 100vh;
+  height: 100vh;
+  z-index: -1;
+  border-radius: 50%;
+  background: rgba(196, 196, 196, 0.24);
 }
