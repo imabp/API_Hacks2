@@ -18,7 +18,7 @@ class Home extends React.Component {
 
             />
             <motion.div
-                className="circlee"
+                className="circle2"
                 animate={{
                     bottom: -280,
                     left: -200,
