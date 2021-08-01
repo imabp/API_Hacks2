@@ -1,5 +1,5 @@
 .home {
-  background: #fff6eb;
+  background: rgba(196, 196, 196, 0.24);
   width: 65%;
   position: fixed;
 }
@@ -10,15 +10,43 @@
   border-radius: 20px;
 }
 
-/* Ellipse 3 */
-.circle::before {
-  content: "";
+.circlee {
+  position: absolute;
+  left: -100vh;
+  bottom: -100vh;
+  width: 100vh;
+  height: 100vh;
+  background: rgba(196, 196, 196, 0.24);
+  border-radius: 50%;
+  transition: 4s;
+  transition-delay: 0.5s;
+}
+
+.circle{
   position: absolute;
   left: -20vh;
   bottom: -30vh;
   width: 100vh;
   height: 100vh;
-  z-index: -1;
+  background: #fff6eb;
   border-radius: 50%;
-  background: rgba(196, 196, 196, 0.24);
+  transition: 4s;
 }
+
+/* @keyframes bounce {
+  0%{
+    height:50vh;
+    weight:50vh;
+  }
+  25%{
+    top: 65vh;
+    right: 20vh;
+    
+  }
+  50%{
+    height:38vh;
+  }
+  75%{
+    height:50vh;
+  }
+} */
