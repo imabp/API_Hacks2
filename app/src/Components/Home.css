@@ -10,7 +10,7 @@
   border-radius: 20px;
 }
 
-.circle2 {
+.circleBottomSlideAnim {
   position: absolute;
   left: -100vh;
   bottom: -100vh;
@@ -22,7 +22,7 @@
   transition-delay: 0.5s;
 }
 
-.circle{
+.circle {
   position: absolute;
   left: -20vh;
   bottom: -30vh;
