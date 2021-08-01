@@ -4,8 +4,8 @@
 
 @font-face {
   font-family: "FiraCode-Regular";
-  src: local("FiraCode-Regular.ttf"),
-    url("./fonts/FiraCode-Regular.ttf") format("truetype");
+  src: local("FiraCode-Regular.woff"),
+    url("./fonts/FiraCode-Regular.woff") format("woff");
 }
 
 body {
