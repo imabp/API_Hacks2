@@ -8,7 +8,7 @@ li {
 }
 
 .nav-link {
-  @apply p-2 items-center w-1/2 self-center;
+  @apply p-2 items-center lg:w-60 w-52 self-center;
   background: rgba(255, 255, 255, 0.4);
   border-radius: 20px;
 }
