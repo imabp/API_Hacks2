@@ -30,9 +30,11 @@ function App() {
               Might be here ;)
             </li>
             {ROUTES.map((route) => (
-              <li className="nav-link">
+              <li>
                 <Link to={route.path} isExternal={route.isExternal}>
-                  <b>{route.displayName}</b>
+                  <button class="nav-link text-white font-bold py-2 px-4 rounded-full">
+                    <b>{route.displayName}</b>
+                  </button>
                 </Link>
               </li>
             ))}
