@@ -1,4 +1,4 @@
-import { Sponsor, Workshop, Theme, WhatIsApi } from "./Components";
+import { Sponsor, Workshop, Theme } from "./Components";
 
 const ROUTES = [
   {
@@ -6,9 +6,7 @@ const ROUTES = [
     displayName: "What is an API?",
     isExternal: false,
     exact: true,
-    component: () => <>
-    <WhatIsApi />
-      </>,
+    component: () => <></>,
   },
   {
     path: "/theme",

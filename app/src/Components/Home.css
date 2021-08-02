@@ -1,6 +1,6 @@
 .home {
   background: rgba(196, 196, 196, 0.24);
-  width: 66.7%; /* !!!!66.7%;!!!!! */
+  width: 65%;
   position: fixed;
 }
 
@@ -10,7 +10,7 @@
   border-radius: 20px;
 }
 
-.circleBottomSlideAnim {
+.circleAnim {
   position: absolute;
   left: -100vh;
   bottom: -100vh;

@@ -4,8 +4,6 @@ import ROUTES from "./routes";
 // using react router
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Home } from "./Components";
-import Bounce from 'react-reveal/Bounce';
-import Zoom from 'react-reveal/Zoom';
 
 function App() {
   return (
@@ -24,26 +22,20 @@ function App() {
             ))}
           </Switch>
         </div>
-        
         <div className="w-1/3 h-screen absolute right-0 flex nav">
           <ul className="m-auto w-full flex flex-col justify-center text-center">
-          
-            <li className="text text-2xl"> 
-            <Bounce left cascade>
+            <li className="text text-2xl">
               What you Looking for?
               <br></br>
               Might be here ;)
-              </Bounce>
             </li>
             {ROUTES.map((route) => (
               <li>
-                <Zoom left>
                 <Link to={route.path} isExternal={route.isExternal}>
-                  <button>
+                  <button class="nav-link text-white font-bold py-2 px-4 rounded-full">
                     <b>{route.displayName}</b>
                   </button>
                 </Link>
-                </Zoom>
               </li>
             ))}
           </ul>

@@ -16,33 +16,32 @@ class Home extends React.Component {
           }}
         />
         <motion.div
-          className="circleBottomSlideAnim"
+          className="circleAnim"
           animate={{
             bottom: -280,
             left: -200,
           }}
         />
-
         <div className="text-5xl lg:text-6xl">
           <Fade left cascade>
             API Hacks
-            <span className="font-black">2.0</span>
-            <br />
-            <br />
+            <span className="font-black">2.0</span>{" "}
           </Fade>
         </div>
-        <div className="text-3xl lg:text-4xl">
+
+        <div className="text-3xl lg:text-4xl mt-4">
           <Fade left cascade>
             9th-10th October, 2021
           </Fade>
         </div>
+
         <div className="mt-14 lg:mt-20 text-2xl lg:text-3xl">
           <Fade left cascade>
-            Build your Digital Footprint
-            <br />
-            as a Student Developer.
+            Build your <br />
+            Digital Footprint as <br />a Student Developer <br />
           </Fade>
         </div>
+
         <Fade left cascade>
           <a href="http://discord.apihacks.co/">
             <button class="text-base lg:text-lg text-black mt-4 py-2 px-4 btn">
@@ -52,9 +51,11 @@ class Home extends React.Component {
             </button>
           </a>
         </Fade>
+
         <div class="absolute bottom-0 pb-10">
           <Fade left cascade>
-            Want to talk to us?
+            {" "}
+            Want to talk to us? <br></br>
             <span className="font-bold">staff@apihacks.co</span>
           </Fade>
         </div>
