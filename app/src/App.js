@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import ROUTES from "./routes";
+import { motion } from "framer-motion";
 // using react router
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Home } from "./Components";
@@ -30,13 +31,21 @@ function App() {
               Might be here ;)
             </li>
             {ROUTES.map((route) => (
-              <li>
+              <motion.li
+              whileHover={{
+                scale: 1.2,
+                originX: 0.5
+              }}
+              transition={{
+                type: 'spring',
+                stiffness: 300
+              }}>
                 <Link to={route.path} isExternal={route.isExternal}>
-                  <button class="nav-link text-white font-bold py-2 px-4 rounded-full">
+                  <button class=" py-2 button button2">
                     <b>{route.displayName}</b>
                   </button>
                 </Link>
-              </li>
+              </motion.li>
             ))}
           </ul>
         </div>
