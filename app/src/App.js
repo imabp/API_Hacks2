@@ -10,7 +10,7 @@ function App() {
   return (
     <Router>
       <div className="flex flex-row relative">
-        <div className="root w-2/3 h-screen">
+        <div className="root h-screen">
           <Switch>
             <Route key="/" path="/" exact={true} children={<Home />} />
             {ROUTES.map((route) => (
@@ -23,7 +23,7 @@ function App() {
             ))}
           </Switch>
         </div>
-        <div className="w-1/3 h-screen absolute right-0 flex nav">
+        <div className="h-screen absolute right-0 flex nav">
           <ul className="m-auto w-full flex flex-col justify-center text-center">
             <li className="text text-2xl">
               What you Looking for?

@@ -21,7 +21,7 @@ class Home extends React.Component {
   render() {
     return (
 
-      <div className="home text-xl pl-12 pt-10 h-screen absolute">
+      <div className="home text-xl pl-6 md:pl-12 pt-10 h-screen absolute">
         <motion.div
           className="circle"
           animate={{
@@ -41,7 +41,7 @@ class Home extends React.Component {
           }}
         />
 
-        <motion.div className="text-5xl lg:text-6xl"
+        <motion.div className="text-5xl md:text-6xl"
           initial={{
             opacity: 0,
             y: '-100vw'}}
@@ -55,10 +55,10 @@ class Home extends React.Component {
           }}
         >
             API Hacks
-            <span className="font-black">2.0</span>{" "}
+            <span className="font-black">2.0</span>
         </motion.div>
 
-        <motion.div className="text-3xl lg:text-4xl mt-4"
+        <motion.div className="text-2xl md:text-4xl mt-2"
           initial={{
             opacity: 0,
             y: '-100vw'}}
@@ -74,7 +74,7 @@ class Home extends React.Component {
             9th-10th October, 2021
         </motion.div>
 
-        <motion.div className="mt-14 lg:mt-20 text-2xl lg:text-3xl"
+        <motion.div className="mt-12 md:mt-20 text-2xl md:text-3xl"
           initial={{
             opacity: 0,
             y: '-100vw'}}
@@ -87,12 +87,14 @@ class Home extends React.Component {
             }
           }}
         >
-            Build your <br />
-            Digital Footprint as <br />a Student Developer <br />
+            Build your{""}
+            Digital Footprint as{""}
+            a Student Developer
         </motion.div>
 
+
           <a href="http://discord.apihacks.co/">
-            <motion.button class="py-2 button"
+            <motion.button class="ptext-base md:text-lg text-black mt-4 py-2 px-4 btn"
               initial={{
                 opacity: 0,
                 y: '-100vw'}}
@@ -109,7 +111,7 @@ class Home extends React.Component {
             </motion.button>
           </a>
 
-        <motion.div class="absolute bottom-0 pb-10"
+        <motion.div class="absolute bottom-0 pb-6"
           initial={{
             opacity: 0,
             y: '-100vw'}}
@@ -122,8 +124,7 @@ class Home extends React.Component {
             }
           }}
         >
-            {" "}
-            Want to talk to us? <br></br>
+            Want to talk to us? {""}
             <span className="font-bold">staff@apihacks.co</span>
         </motion.div>
       </div>
