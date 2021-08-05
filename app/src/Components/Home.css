@@ -1,6 +1,6 @@
 .home {
   background: rgba(196, 196, 196, 0.24);
-  width: 65%;
+  width: 100%;
   position: fixed;
 }
 
@@ -8,6 +8,10 @@
   background: rgba(0, 0, 0, 0.315);
   box-sizing: border-box;
   border-radius: 20px;
+}
+
+p {
+  white-space: pre-line;
 }
 
 .circleAnim {
