@@ -54,11 +54,12 @@ class Home extends React.Component {
             }
           }}
         >
-            API Hacks
-            <span className="font-black">2.0</span>
+            API Hacks<br />
+            <motion.span className="font-black"
+              >2.0</motion.span>
         </motion.div>
 
-        <motion.div className="text-2xl md:text-4xl mt-2"
+        <motion.div className="text-2xl md:text-4xl mt-20"
           initial={{
             opacity: 0,
             y: '-100vw'}}
@@ -74,7 +75,7 @@ class Home extends React.Component {
             9th-10th October, 2021
         </motion.div>
 
-        <motion.div className="mt-12 md:mt-20 text-2xl md:text-3xl"
+        <motion.div className="mt-12 md:mt-48 text-2xl md:text-3xl"
           initial={{
             opacity: 0,
             y: '-100vw'}}
@@ -94,7 +95,7 @@ class Home extends React.Component {
 
 
           <a href="http://discord.apihacks.co/">
-            <motion.button class="ptext-base md:text-lg text-black mt-4 py-2 px-4 btn"
+            <motion.button class="button ptext-base md:text-lg text-black mt-12 py-2 px-4 btn"
               initial={{
                 opacity: 0,
                 y: '-100vw'}}
