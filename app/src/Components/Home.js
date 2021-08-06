@@ -87,8 +87,8 @@ class Home extends React.Component {
             }
           }}
         >
-            Build your{""}
-            Digital Footprint as{""}
+            Build your <br />
+            Digital Footprint as <br />
             a Student Developer
         </motion.div>
 
@@ -124,7 +124,7 @@ class Home extends React.Component {
             }
           }}
         >
-            Want to talk to us? {""}
+            Want to talk to us? <br />
             <span className="font-bold">staff@apihacks.co</span>
         </motion.div>
       </div>
