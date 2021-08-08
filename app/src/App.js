@@ -32,14 +32,15 @@ function App() {
             </li>
             {ROUTES.map((route) => (
               <motion.li
-              whileHover={{
-                scale: 1.2,
-                originX: 0.5
-              }}
-              transition={{
-                type: 'spring',
-                stiffness: 300
-              }}>
+                whileHover={{
+                  scale: 1.2,
+                  originX: 0.5,
+                }}
+                transition={{
+                  type: "spring",
+                  stiffness: 300,
+                }}
+              >
                 <Link to={route.path} isExternal={route.isExternal}>
                   <button class=" py-2 button button2">
                     <b>{route.displayName}</b>
