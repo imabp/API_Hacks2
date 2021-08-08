@@ -17,5 +17,9 @@ li {
 
 .nav {
   background: #e19c4b;
-  width: 35%;
+  width: 35vw;
+}
+
+.root {
+  width: 65vw;
 }

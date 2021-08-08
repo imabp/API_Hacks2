@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import ROUTES from "./routes";
+import { motion } from "framer-motion";
 // using react router
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Home } from "./Components";
@@ -9,7 +10,7 @@ function App() {
   return (
     <Router>
       <div className="flex flex-row relative">
-        <div className="root w-2/3 h-screen">
+        <div className="root h-screen">
           <Switch>
             <Route key="/" path="/" exact={true} children={<Home />} />
             {ROUTES.map((route) => (
@@ -22,7 +23,7 @@ function App() {
             ))}
           </Switch>
         </div>
-        <div className="w-1/3 h-screen absolute right-0 flex nav">
+        <div className="h-screen absolute right-0 flex nav">
           <ul className="m-auto w-full flex flex-col justify-center text-center">
             <li className="text text-2xl">
               What you Looking for?
@@ -30,13 +31,22 @@ function App() {
               Might be here ;)
             </li>
             {ROUTES.map((route) => (
-              <li>
+              <motion.li
+                whileHover={{
+                  scale: 1.2,
+                  originX: 0.5,
+                }}
+                transition={{
+                  type: "spring",
+                  stiffness: 300,
+                }}
+              >
                 <Link to={route.path} isExternal={route.isExternal}>
-                  <button class="nav-link text-white font-bold py-2 px-4 rounded-full">
+                  <button class=" py-2 button button2">
                     <b>{route.displayName}</b>
                   </button>
                 </Link>
-              </li>
+              </motion.li>
             ))}
           </ul>
         </div>
