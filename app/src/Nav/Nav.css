@@ -1,0 +1,16 @@
+li {
+    margin: 15px auto;
+  }
+  
+.nav-link {
+    @apply p-2 items-center lg:w-60 w-52 self-center;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    background: #ffd39e;
+    color: #000000;
+}
+  
+.nav {
+    background: #e19c4b;
+    width: 35vw;
+}
