@@ -1,9 +1,10 @@
 import React from 'react'
 import ROUTES from "../routes";
 import { motion } from "framer-motion";
+import "./Nav.css"
 
-function Nav( {Link} ) {
-    return ( 
+function Nav({ Link }) {
+    return (
         <div className="h-screen absolute right-0 flex nav">
             <ul className="m-auto w-full flex flex-col justify-center text-center">
                 <li className="text text-2xl">
@@ -30,6 +31,7 @@ function Nav( {Link} ) {
                 ))}
             </ul>
         </div>
+
     )
 }
 
