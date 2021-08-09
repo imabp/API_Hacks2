@@ -41,7 +41,7 @@ p {
   flex: 1;
   padding: 0.7vh 1.8vh;
   border-radius: 999px;
-  border: 3px solid #284cff;
+  border: 1px solid #e1be4b;
   font-size: 2vh;
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
   white-space: nowrap;

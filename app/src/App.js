@@ -25,6 +25,7 @@ function App() {
         </div>
 
         <Nav Link={Link} />
+
       </div>
     </Router>
   );
