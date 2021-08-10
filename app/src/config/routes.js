@@ -1,4 +1,11 @@
-import { Sponsor, Workshop, Theme, WhatIsAPI } from "./Components";
+import {
+  Registration,
+  Staff,
+  AboutAPI,
+  Sponsors,
+  Workshops,
+  HackThemes,
+} from "./../pages";
 
 const ROUTES = [
   {
@@ -8,7 +15,7 @@ const ROUTES = [
     exact: true,
     component: () => (
       <>
-        <WhatIsAPI />
+        <AboutAPI />
       </>
     ),
   },
@@ -19,7 +26,7 @@ const ROUTES = [
     exact: true,
     component: () => (
       <>
-        <Theme />
+        <HackThemes />
       </>
     ),
   },
@@ -30,7 +37,7 @@ const ROUTES = [
     exact: true,
     component: () => (
       <>
-        <Workshop />
+        <Workshops />
       </>
     ),
   },
@@ -41,7 +48,7 @@ const ROUTES = [
     exact: true,
     component: () => (
       <>
-        <Sponsor />
+        <Sponsors />
       </>
     ),
   },

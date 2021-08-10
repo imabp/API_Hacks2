@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Sponsor() {
+const Sponsor = () => {
     return (
         <div>
             Sponsor page

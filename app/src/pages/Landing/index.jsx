@@ -1,23 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "./Home.css";
+import "./index.css";
+import { WaveBTN } from "../../components";
 
-/* const containerVariants = {
-  hidden:{
-    opacity: 0,
-    y: '-100vw'
-  },
-  visible:{
-    opacity: 1,
-    y: 0,
-    zIndex: 1,
-    transition: {
-      type: 'spring', stiffness: 50,  duration: 3
-    }
-  }
-} */
 
-class Home extends React.Component {
+class Landing extends React.Component {
   render() {
     return (
       <div className="home text-xl pl-6 md:pl-12 pt-10 h-screen absolute">
@@ -106,25 +93,7 @@ class Home extends React.Component {
           Digital Footprint as <br />a Student Developer
         </motion.div>
         <a href="http://discord.apihacks.co/">
-          <motion.button
-            class="button ptext-base md:text-lg text-black mt-12 py-2 px-4 btn"
-            initial={{
-              opacity: 0,
-              y: "-100vw",
-            }}
-            animate={{
-              opacity: 1,
-              y: 0,
-              zIndex: 1,
-              transition: {
-                type: "spring",
-                stiffness: 50,
-                duration: 3,
-              },
-            }}
-          >
-            Interested? Join Us
-          </motion.button>
+          <WaveBTN type="btn" text="Interested? Join Us" />
         </a>
 
         <motion.div
@@ -155,4 +124,4 @@ class Home extends React.Component {
   }
 }
 
-export default Home;
+export default Landing;
