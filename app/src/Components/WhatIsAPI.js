@@ -1,16 +1,12 @@
 import React, { useState } from 'react'
-import APIworking from "../assets/api-test-image.jpg"
-import Request from "../assets/Request.gif"
-import working from "../assets/working.gif"
-import response from "../assets/response.gif"
 
 function WhatIsAPI() {
     const [currentPage, setCurrentPage] = useState(0)
 
     const pageData = [
-        [<img src={Request} alt="request" style={{ height: "200px", width: "300px" }} />, "Carl asked his driver to help him reach carl santos.", "(API called)"],
-        [<img src={working} alt="working" style={{ height: "200px", width: "300px" }} />, "Carl's driver took him way too fast.", "(Carl's Driver = API Working)"],
-        [<img src={response} alt="response" style={{ height: "200px", width: "300px" }} />, "Carl finally reached Los Santos within 2 hours.", "(Response Received from API)"]
+        [<img src="https://cdn.discordapp.com/attachments/874607271848607754/874608902963085372/request-new.gif" alt="request" style={{ height: "200px", width: "300px" }} />, "Carl asked his driver to help him reach carl santos.", "(API called)"],
+        [<img src="https://cdn.discordapp.com/attachments/874607271848607754/874611343444049920/working-new.gif" alt="working" style={{ height: "200px", width: "300px" }} />, "Carl's driver took him way too fast.", "(Carl's Driver = API Working)"],
+        [<img src="https://cdn.discordapp.com/attachments/874607271848607754/874611305875656724/response-new.gif" alt="response" style={{ height: "200px", width: "300px" }} />, "Carl finally reached Los Santos within 2 hours.", "(Response Received from API)"]
     ]
 
     function goToNextPage() {
@@ -24,9 +20,9 @@ function WhatIsAPI() {
 
     return (
         <div className="flex flex-col justify-center items-center px-6 md:px-12 overflow-x-visible my-8">
-            <img src={APIworking} alt="working of API"/>
+
             <div className="mt-10 text-xl md:2xl lg:text-3xl">
-                What is an API ?
+                What is an API ? <br />
                 <div className="mt-6 text-sm md:xl lg:text-2xl leading-6 md:leading-8 lg:leading-10">
                     API stands for Application Programming Interface. <br />
                     This is basically an intermediate between your Application and servers/databases. <br />
@@ -55,9 +51,14 @@ function WhatIsAPI() {
                 </div>
 
                 <div className="text-sm md:xl lg:text-2xl leading-6 md:leading-8 lg:leading-10 mt-8">
-             Now it's your choice, what do you have to do with the data. You may show perform some computation on it or show it right away.
-</div>
+                    Now it's your choice, what do you have to do with the data. You may show perform some computation on it or show it right away.
+                </div>
 
+
+                <div className="mt-14 md:mt-20 flex flex-col items-center">
+                    A more detailed version is here for you
+                    < img src="https://cdn.discordapp.com/attachments/874607271848607754/874607940231905351/api-test-image.jpg" alt="working of API" className="mt-8" />
+                </div>
             </div>
 
         </div>
