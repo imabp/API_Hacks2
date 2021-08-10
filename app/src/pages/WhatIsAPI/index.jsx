@@ -120,7 +120,7 @@ const WhatIsAPI = () => {
         </ul>
         <div className="text-sm md:xl lg:text-2xl leading-6 md:leading-8 lg:leading-10 mt-8">
           Now it's your choice, what do you have to do with the data. You may
-          show perform some computation on it or show it right away.
+          perform some computation on it or show it right away.
         </div>
         <div className="mt-14 md:mt-20 flex flex-col items-center">
           A more detailed version is here for you
