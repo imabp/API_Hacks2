@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Workshop() {
+const Staff = () => {
     return (
         <div>
-            workshop page
+            Staff page
         </div>
     )
 }
 
-export default Workshop
+export default Staff

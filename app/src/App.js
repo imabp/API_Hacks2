@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
-import ROUTES from "./routes";
+import { RenderConfig } from "./config";
 // using react router
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { Home } from "./Components";
-import Nav from "./Nav/Nav";
+import { Home } from "./pages";
+import { Nav } from "./core";
 
 function App() {
   return (
@@ -13,19 +13,10 @@ function App() {
         <div className="root h-screen overflow-y-scroll">
           <Switch>
             <Route key="/" path="/" exact={true} children={<Home />} />
-            {ROUTES.map((route) => (
-              <Route
-                key={route.path}
-                path={route.path}
-                exact={route.exact}
-                children={<route.component />}
-              />
-            ))}
+            <RenderConfig />
           </Switch>
         </div>
-
         <Nav Link={Link} />
-
       </div>
     </Router>
   );

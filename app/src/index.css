@@ -5,7 +5,7 @@
 @font-face {
   font-family: "FiraCode-Regular";
   src: local("FiraCode-Regular.woff"),
-    url("./fonts/FiraCode-Regular.woff") format("woff");
+    url("./core/fonts/FiraCode-Regular.woff") format("woff");
 }
 
 body {
