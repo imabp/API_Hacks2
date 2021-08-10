@@ -9,8 +9,8 @@ import Nav from "./Nav/Nav";
 function App() {
   return (
     <Router>
-      <div className="flex flex-row relative">
-        <div className="root h-screen">
+      <div className="flex flex-row">
+        <div className="root h-screen overflow-y-scroll">
           <Switch>
             <Route key="/" path="/" exact={true} children={<Home />} />
             {ROUTES.map((route) => (
