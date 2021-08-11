@@ -4,12 +4,20 @@ import { motion } from "framer-motion";
 import "./index.css";
 
 function Nav({ Link }) {
-
+  const [toggle, setToggle] = React.useState(false);
   return (
     <div class="navbar">
-
-      <input type="checkbox" id="navbar-toggle" />
-      <label for="navbar-toggle"><i></i></label>
+      <input
+        type="checkbox"
+        id="navbar-toggle"
+        checked={toggle}
+        onClick={() => {
+          setToggle(!toggle);
+        }}
+      />
+      <label for="navbar-toggle">
+        <i></i>
+      </label>
 
       <div className="h-screen absolute right-0 nav menu">
         <ul className="m-auto w-full h-screen flex flex-col justify-center text-center">
@@ -30,7 +38,12 @@ function Nav({ Link }) {
               }}
             >
               <Link to={route.path} isExternal={route.isExternal}>
-                <button class="py-2 button button2">
+                <button
+                  class="py-2 button button2"
+                  onClick={() => {
+                    setToggle(!toggle);
+                  }}
+                >
                   {route.displayName}
                 </button>
               </Link>
@@ -38,7 +51,6 @@ function Nav({ Link }) {
           ))}
         </ul>
       </div>
-
     </div>
   );
 }
