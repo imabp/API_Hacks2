@@ -47,7 +47,7 @@ li {
     left: 0px;
     width: 100%;
     height: 100%;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s ease-in-out;
     display: table;
 }
 
@@ -63,7 +63,7 @@ li {
 .navbar label i {
   height: 2px;
   position: relative;
-  transition: background .2s ease-out;
+  transition: all .2s ease-out;
   width: 18px;
   font-style: normal;
   font-weight: normal;
@@ -73,7 +73,7 @@ li {
   content: '';
   height: 100%;
   position: absolute;
-  transition: all .2s ease-out;
+  transition: all .3s ease-out;
   width: 100%;
 }
 .navbar label i,
