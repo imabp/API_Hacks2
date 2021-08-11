@@ -6,3 +6,9 @@
 .root {
   width: 65vw;
 }
+
+@media screen and (max-width: 786px) {
+  .root {
+    width: 100vw;
+  }
+}
