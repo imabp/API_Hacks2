@@ -53,6 +53,17 @@ const ROUTES = [
     ),
   },
   {
+    path: "/staff",
+    displayName: "Staff",
+    isExternal: false,
+    exact: true,
+    component: () => (
+      <>
+        <Staff />
+      </>
+    ),
+  },
+  {
     path: "/blog",
     displayName: "Our Hacker Media",
     isExternal: false,
