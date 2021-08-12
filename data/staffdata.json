@@ -63,10 +63,17 @@
             "linkedin": "",
             "twitter": "",
             "github": ""
-        },
+        },{
+            "name": "Suyash Chandra",
+            "img": "https://cdn.discordapp.com/attachments/874149053313716284/875354643503386674/ucu_WJLh_400x400.png",
+            "description": "",
+            "linkedin": "",
+            "twitter": "",
+            "github": ""
+        },       
         {
-            "name": "Vaibhav",
-            "img": "",
+            "name": "Calvin D Souza",
+            "img": "https://cdn.discordapp.com/attachments/874149053313716284/875354508237107200/2KYt6S5a_400x400.png",
             "description": "",
             "linkedin": "",
             "twitter": "",
@@ -97,16 +104,8 @@
             "github": ""
         },
         {
-            "name": "Suyash Chandra",
-            "img": "https://cdn.discordapp.com/attachments/874149053313716284/875354643503386674/ucu_WJLh_400x400.png",
-            "description": "",
-            "linkedin": "",
-            "twitter": "",
-            "github": ""
-        },
-        {
-            "name": "Calvin D Souza",
-            "img": "https://cdn.discordapp.com/attachments/874149053313716284/875354508237107200/2KYt6S5a_400x400.png",
+            "name": "Vaibhav",
+            "img": "",
             "description": "",
             "linkedin": "",
             "twitter": "",
