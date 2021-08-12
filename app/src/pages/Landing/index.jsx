@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./index.css";
-import { WaveBTN } from "../../components";
+import { WaveBTN } from "../../Components";
 
 
 class Landing extends React.Component {

@@ -6,25 +6,8 @@ import "./index.css";
 
 const Staff = () => {
     return (
-    <div className="main">
-        <motion.div className="heading"
-        initial={{
-            opacity: 0,
-            y: "-100vw",
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-            zIndex: 1,
-            transition: {
-              type: "spring",
-              stiffness: 50,
-              duration: 3,
-              delay: 0.5,
-            },
-          }}>
-            Meet our Team
-        </motion.div>
+
+     
         <div className="container">
         <motion.div  className="card"
             initial={{
@@ -47,27 +30,7 @@ const Staff = () => {
                 </div>
             </div>
         </motion.div>
-        <motion.div  className="card"
-            initial={{
-                opacity: 0,
-            }}
-            animate={{
-                opacity: 1,
-                transition: {
-                duration: 1.5,
-                delay:0.9,
-                },
-            }}>
-            <div className="content">
-                <div className="imgBx">
-                    <img src="https://media.discordapp.net/attachments/864382375182336000/874255567353442355/IMG_20210809_141226_983.webp?width=676&height=676"></img>
-                </div>
-                <div className="contentBx">
-                    <h4>Rajdeep</h4>
-                    <h5>SDE II Amazon</h5>
-                </div>
-            </div>
-        </motion.div>
+
         <motion.div  className="card"
             initial={{
                 opacity: 0,
@@ -84,11 +47,12 @@ const Staff = () => {
                     <img src="https://cdn.discordapp.com/attachments/874149053313716284/874227279482478612/IMG_20191224_155514-02.jpeg" alt=""></img>
                 </div>
                 <div className="contentBx">
-                    <h4>Ashish</h4>
+                    <h4>Ashish Chawda</h4>
                     <h5> SWE Intern, Tray, GitHub Campus Expert</h5>
                 </div>
             </div>
         </motion.div>
+
         <motion.div  className="card"
             initial={{
                 opacity: 0,
@@ -97,19 +61,20 @@ const Staff = () => {
                 opacity: 1,
                 transition: {
                 duration: 1.5,
-                delay:1.5,
+                delay:0.9,
                 },
             }}>
             <div className="content">
                 <div className="imgBx">
-                    {/* <img src="./team3.jpg" alt=""> */}
+                    <img src="https://media.discordapp.net/attachments/864382375182336000/874255567353442355/IMG_20210809_141226_983.webp?width=676&height=676"></img>
                 </div>
                 <div className="contentBx">
-                    <h4>Vaibhav</h4>
-                    <h5>Developer</h5>
+                    <h4>Rajdeep Deb</h4>
+                    <h5>SDE II Amazon</h5>
                 </div>
             </div>
         </motion.div>
+        
         <motion.div  className="card"
             initial={{
                 opacity: 0,
@@ -139,57 +104,36 @@ const Staff = () => {
                 opacity: 1,
                 transition: {
                 duration: 1.5,
+                delay:3.3,
+                },
+            }}>
+            <div className="content">
+                <div className="imgBx">
+                    <img src="https://cdn.discordapp.com/attachments/874149053313716284/874177070433972234/IMG_20191112_103220-01.jpg" alt=""></img>
+                </div>
+                <div className="contentBx">
+                    <h4>Pranav</h4>
+                    <h5>CS Student,  GDG Chandigarh</h5>
+                </div>
+            </div>
+        </motion.div>
+        <motion.div  className="card"
+            initial={{
+                opacity: 0,
+            }}
+            animate={{
+                opacity: 1,
+                transition: {
+                duration: 1.5,
                 delay:2.1,
                 },
             }}>
             <div className="content">
                 <div className="imgBx">
-                    <img src="https://avatars.githubusercontent.com/u/35025375?v=4" alt=""></img>
+                    <img src="https://cdn.discordapp.com/attachments/810228073173745764/875115168080728114/46107BE4-D813-4CC9-AA14-3851D2B1126C.jpg" alt=""></img>
                 </div>
                 <div className="contentBx">
                     <h4>Yajush Vyas</h4>
-                    <h5>Developer</h5>
-                </div>
-            </div>
-        </motion.div>
-        <motion.div  className="card"
-            initial={{
-                opacity: 0,
-            }}
-            animate={{
-                opacity: 1,
-                transition: {
-                duration: 1.5,
-                delay:2.4,
-                },
-            }}>
-            <div className="content">
-                <div className="imgBx">
-                    {/* <img src="./team3.jpg" alt=""> */}
-                </div>
-                <div className="contentBx">
-                    <h4>Sarthak Sharma</h4>
-                    <h5>Developer</h5>
-                </div>
-            </div>
-        </motion.div>
-        <motion.div  className="card"
-            initial={{
-                opacity: 0,
-            }}
-            animate={{
-                opacity: 1,
-                transition: {
-                duration: 1.5,
-                delay:2.7,
-                },
-            }}>
-            <div className="content">
-                <div className="imgBx">
-                    <img src="https://cdn.discordapp.com/attachments/874149053313716284/874637332903497738/IMG_20210810_182614.jpg" alt=""></img>
-                </div>
-                <div className="contentBx">
-                    <h4>Dhruv</h4>
                     <h5>Developer</h5>
                 </div>
             </div>
@@ -223,19 +167,84 @@ const Staff = () => {
                 opacity: 1,
                 transition: {
                 duration: 1.5,
-                delay:3.3,
+                delay:4.1,
                 },
             }}>
             <div className="content">
                 <div className="imgBx">
-                    <img src="https://cdn.discordapp.com/attachments/874149053313716284/874177070433972234/IMG_20191112_103220-01.jpg" alt=""></img>
+                    <img src="https://cdn.discordapp.com/attachments/874149053313716284/874641530986565672/4F87FFD9-DE23-4FD8-8D82-560D5CB70FB6_2.jpg" alt=""></img>
                 </div>
                 <div className="contentBx">
-                    <h4>Pranav</h4>
-                    <h5>CS Student,  GDG Chandigarh</h5>
+                    <h4>Prathamesh</h4>
+                    <h5>Developer</h5>
                 </div>
             </div>
         </motion.div>
+        <motion.div  className="card"
+            initial={{
+                opacity: 0,
+            }}
+            animate={{
+                opacity: 1,
+                transition: {
+                duration: 1.5,
+                delay:1.5,
+                },
+            }}>
+            <div className="content">
+                <div className="imgBx">
+                    {/* <img src="./team3.jpg" alt=""> */}
+                </div>
+                <div className="contentBx">
+                    <h4>Vaibhav</h4>
+                    <h5>Developer</h5>
+                </div>
+            </div>
+        </motion.div>
+        <motion.div  className="card"
+            initial={{
+                opacity: 0,
+            }}
+            animate={{
+                opacity: 1,
+                transition: {
+                duration: 1.5,
+                delay:3.9,
+                },
+            }}>
+            <div className="content">
+                <div className="imgBx">
+                    <img src="https://cdn.discordapp.com/attachments/874149053313716284/875094429269106768/img1628607974899.jpg" alt=""></img>
+                </div>
+                <div className="contentBx">
+                    <h4>Anushka</h4>
+                    <h5>CS Student</h5>
+                </div>
+            </div>
+        </motion.div>
+        <motion.div  className="card"
+            initial={{
+                opacity: 0,
+            }}
+            animate={{
+                opacity: 1,
+                transition: {
+                duration: 1.5,
+                delay:2.7,
+                },
+            }}>
+            <div className="content">
+                <div className="imgBx">
+                    <img src="https://cdn.discordapp.com/attachments/874149053313716284/874637332903497738/IMG_20210810_182614.jpg" alt=""></img>
+                </div>
+                <div className="contentBx">
+                    <h4>Dhruv</h4>
+                    <h5>Developer</h5>
+                </div>
+            </div>
+        </motion.div>
+        
+        
         <motion.div  className="card"
             initial={{
                 opacity: 0,
@@ -257,6 +266,9 @@ const Staff = () => {
                 </div>
             </div>
         </motion.div>
+        
+        
+
         <motion.div  className="card"
             initial={{
                 opacity: 0,
@@ -265,42 +277,21 @@ const Staff = () => {
                 opacity: 1,
                 transition: {
                 duration: 1.5,
-                delay:3.9,
+                delay:2.4,
                 },
             }}>
             <div className="content">
                 <div className="imgBx">
-                    <img src="https://cdn.discordapp.com/attachments/874149053313716284/874284519111397386/IMG_20210809_190408.jpg" alt=""></img>
+                    {/* <img src="./team3.jpg" alt=""> */}
                 </div>
                 <div className="contentBx">
-                    <h4>Anushka</h4>
-                    <h5>CS Student</h5>
-                </div>
-            </div>
-        </motion.div>
-        <motion.div  className="card"
-            initial={{
-                opacity: 0,
-            }}
-            animate={{
-                opacity: 1,
-                transition: {
-                duration: 1.5,
-                delay:4.1,
-                },
-            }}>
-            <div className="content">
-                <div className="imgBx">
-                    <img src="https://cdn.discordapp.com/attachments/874149053313716284/874641530986565672/4F87FFD9-DE23-4FD8-8D82-560D5CB70FB6_2.jpg" alt=""></img>
-                </div>
-                <div className="contentBx">
-                    <h4>Prathamesh</h4>
+                    <h4>Sarthak Sharma</h4>
                     <h5>Developer</h5>
                 </div>
             </div>
         </motion.div>
         </div>
-    </div>
+
       );
 }
   
