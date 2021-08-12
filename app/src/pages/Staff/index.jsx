@@ -31,11 +31,11 @@ const Staff = () => {
                             key={id}>
                             <div className="content">
                                 <div className="imgBx">
-                                    <img alt={member.name} src={member.img}></img>
+                                    <img alt={member.name.toLowerCase()} src={member.img}></img>
                                 </div>
                                 <div className="contentBx">
-                                    <h4>{member.name}</h4>
-                                    <h5>{member.description}</h5>
+                                    <h4>{member.name.toLowerCase()}</h4>
+                                    <h5>{member.description.toLowerCase()}</h5>
                                     {member.linkedin && <><FontAwesomeIcon icon={["fab", "linkedin"]} /></>}
                                     {member.github && <><FontAwesomeIcon icon={["fab", "github"]} /></>}
                                     {member.twitter && <><FontAwesomeIcon icon={["fab", "twitter"]} /></>}

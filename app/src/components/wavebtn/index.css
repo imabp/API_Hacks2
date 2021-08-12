@@ -22,12 +22,30 @@
 }
 
 .button2 {
+  flex: 1;
+  padding: 0.7vh 1.8vh;
+  border-radius: 999px;
+  border: 1px solid #e1be4b;
+  font-size: 2vh;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  user-select: none;
+  background: transparent;
+  background-image: url("navwav2.png");
+  background-repeat: repeat-x;
+  background-position: -10% -100%;
+  transition: 1.5s ease;
   padding: 0.8vh 1.8vh;
   width: 25vh;
   font-size: 1.5vh;
-  filter: hue-rotate(-40deg);
+  /* filter: grayscale(100%) invert; */
+  color: rgb(0, 0, 0);
 }
 
 .button2:hover {
-  filter: hue-rotate(120deg);
+  background-position: 500% 100%;
+
+  color: rgb(255, 255, 255);
 }

@@ -26,39 +26,22 @@ const WhatIsAPI = () => {
     }
   };
 
-  // const getPageContent = () => {
-
-  //   if (0 < pageData < pageData.length ) {
-  //     const getGIF = () => {
-  //       setCurrentGIF(pageData[currentPage][gifIndex]);
-  //     };
-
-  //     const getText = () => {
-  //       setCurrentText(pageData[currentPage][textIndex]);
-  //     };
-
-  //     const getAPIInfo = () => {
-  //       setAPIInfo(pageData[currentPage][inferenceIndex]);
-  //     };
-  //     getGIF();
-  //     getText();
-  //     getAPIInfo();
-  //   }
-  // };
 
   const variants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
   };
 
+
   return (
-    <div className="flex flex-col justify-center items-center px-6 md:px-12 overflow-x-visible my-8">
+    <div style={{ width: "100%" }} className="flex flex-col justify-center items-center px-6 md:px-12 overflow-x-visible my-8">
+
       <div className="mt-4 text-xl md:1xl lg:text-3xl">
-        <b> What is an API ?</b> <br />
+        <b>🧩 what's an api ?</b> <br />
         <div className="mt-6 text-xs md:sm lg:text-2xl leading-6 md:leading-8 lg:leading-10">
-          Hello World, If you are reading this, we certainly believe, you are
-          new to the world of APIs.
-          <br /> Do read this!!
+          if you are reading this, we certainly believe, you are
+          new to the world of apis.
+          <br /> lets see this story...
           <br />
           <br />
         </div>
@@ -73,10 +56,13 @@ const WhatIsAPI = () => {
             src={currentGIF}
             alt="response"
             style={{ height: "200px", width: "300px" }}
-          />,
+          />
           <span className="pt-6 md:pl-4">
-            {currentText}{" "}
-            <strong>{apiInfo}</strong>
+            {currentText.toLowerCase()}{" "}<br />
+            <strong>{apiInfo.toLowerCase()}</strong><br />
+            {currentPage === pageData.length - 1 && <>Now it's your choice, what do you have to do with the data. You may
+              perform some computation on it or show it right away.
+            </>}
           </span>
         </motion.div>
         {/* buttons */}
@@ -112,18 +98,33 @@ const WhatIsAPI = () => {
             </button>
           </li>
         </ul>
-        <div className="text-sm md:xl lg:text-2xl leading-6 md:leading-8 lg:leading-10 mt-8">
-          Now it's your choice, what do you have to do with the data. You may
-          perform some computation on it or show it right away.
+
+        <div className="mt-14 md:mt-20 flex flex-col ">
+          🚀 diving bit deeper . . .<br /><br />why api first approach?
+          <div className="mt-6 text-xs md:sm lg:text-2xl leading-6 md:leading-8 lg:leading-10">
+            ensures good developer experiences
+            <br />development teams can work in parallel and share the same code
+            <br />reduces the cost of developing apps
+            <br /> increases the speed to market
+            <br /> reduces the risk of failure
+
+          </div>
         </div>
-        <div className="mt-14 md:mt-20 flex flex-col items-center">
-          A more detailed version is here for you
-          <img
-            src="https://cdn.discordapp.com/attachments/874607271848607754/874607940231905351/api-test-image.jpg"
-            alt="working of API"
-            className="mt-8"
-          />
+
+        <div className="mt-14 md:mt-20 flex flex-col ">
+          🚀 why api hacks?
+          <div className="mt-6 text-xs md:sm lg:text-2xl leading-6 md:leading-8 lg:leading-10">
+            be it a beginner, or an expert, api hacks focusses on helping developers
+            to know the power of apis and work on building api literacy among students
+            and professionals.
+            <br /><br />
+            what are you waiting for?<br /> join the hackathon!
+            <br />
+          </div>
+
         </div>
+
+
       </div>
     </div>
   );

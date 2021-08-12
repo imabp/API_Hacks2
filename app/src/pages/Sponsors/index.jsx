@@ -3,7 +3,9 @@ import React from 'react'
 const Sponsor = () => {
     return (
         <div>
-            Sponsor page
+            Season 2 Sponsors
+            Coming Soon<br />
+            Be a Sponsor
         </div>
     )
 }

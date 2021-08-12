@@ -10,7 +10,7 @@ import {
 const ROUTES = [
   {
     path: "/what-is-api",
-    displayName: "What is an API?",
+    displayName: "What's' an API?",
     isExternal: false,
     exact: true,
     component: () => (
@@ -32,7 +32,7 @@ const ROUTES = [
   },
   {
     path: "/workshop",
-    displayName: "Awesome Workshops",
+    displayName: "call for speakers",
     isExternal: false,
     exact: true,
     component: () => (

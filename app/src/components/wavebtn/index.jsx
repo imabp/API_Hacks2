@@ -41,8 +41,8 @@ const WaveBTN = (props) => {
                     stiffness: 300
                 }}>
                 <Link to={route.path} isExternal={route.isExternal}>
-                    <button class=" py-2 button button2">
-                        <b>{route.displayName}</b>
+                    <button onClick={onClick} class="  py-2 button2">
+                        <b>{route.displayName.toLowerCase()}</b>
                     </button>
                 </Link>
             </motion.li>);
