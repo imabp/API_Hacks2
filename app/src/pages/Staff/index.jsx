@@ -1,8 +1,7 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import "./index.css";
-
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Staff = () => {
     const URI = "https://imabp.github.io/API_Hacks2/data/staffdata.json"
     const [StaffData, setStaffData] = React.useState({ "staff": [] });
@@ -13,10 +12,8 @@ const Staff = () => {
             .catch(error => console.log(error))
     }, []);
     return (
-
-
         <div className="container">
-            {console.log(StaffData)}
+
             {
                 StaffData.staff && StaffData.staff.map((member, id) => {
                     return (
@@ -39,6 +36,9 @@ const Staff = () => {
                                 <div className="contentBx">
                                     <h4>{member.name}</h4>
                                     <h5>{member.description}</h5>
+                                    {member.linkedin && <><FontAwesomeIcon icon={["fab", "linkedin"]} /></>}
+                                    {member.github && <><FontAwesomeIcon icon={["fab", "github"]} /></>}
+                                    {member.twitter && <><FontAwesomeIcon icon={["fab", "twitter"]} /></>}
                                 </div>
                             </div>
                         </motion.div>
