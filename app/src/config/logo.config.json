@@ -1,0 +1,15 @@
+{
+    "LOGO_FAVICON": "https://cdn.discordapp.com/attachments/874607271848607754/875006418317639691/Group_72.png",
+    "LOGO_CIRCULAR": "https://media.discordapp.net/attachments/874607271848607754/875003289119391764/Group_71.png?width=193&height=193",
+    "LOGO_BADGE": "https://cdn.discordapp.com/attachments/874607271848607754/875006817984475236/Group_91.png",
+    "HORIZONTAL": {
+        "TRANSPARENT": {
+            "WITH_BORDER": "https://cdn.discordapp.com/attachments/874607271848607754/875002632102637568/Frame_92.png",
+            "WITHOUT_BORDER": "https://cdn.discordapp.com/attachments/874607271848607754/875004930983870544/Frame_101.png"
+        },
+        "WHITE_BG": {
+            "WITH_BORDER": "https://cdn.discordapp.com/attachments/874607271848607754/875005865621606450/Frame_91.png",
+            "WITHOUT_BORDER": "https://cdn.discordapp.com/attachments/874607271848607754/875004934628708402/Frame_10.png"
+        }
+    }
+}

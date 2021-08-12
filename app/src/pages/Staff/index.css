@@ -1,14 +1,3 @@
-::-webkit-scrollbar {
-  width: 12px;
-}
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(transparent, #f8ead7);
-  border-radius: 6px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(transparent, #ddcaaf);
-  border-radius: 6px;
-}
 .container {
   margin-top: 3vh;
   display: flex;
@@ -40,6 +29,9 @@
   transition: 0.5s;
   filter: grayscale(0%);
   width: 104%;
+}
+.imgBx:hover {
+  z-index: -5 !important;
 }
 .container .card .content .imgBx img {
   position: absolute;
