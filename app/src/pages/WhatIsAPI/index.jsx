@@ -1,56 +1,50 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import page from "./data/pageData";
+
 const pageData = page.pageData;
+
 const WhatIsAPI = () => {
   const gifIndex = "gif";
   const textIndex = "text";
   const inferenceIndex = 'inference';
 
   const [currentPage, setCurrentPage] = useState(0);
-  const [currentGIF, setCurrentGIF] = useState(pageData[0][gifIndex]);
-  const [currentText, setCurrentText] = useState(pageData[0][textIndex]);
-  const [apiInfo, setAPIInfo] = useState(pageData[0][inferenceIndex]);
+  const currentGIF = pageData[currentPage][gifIndex]
+  const currentText = pageData[currentPage][textIndex]
+  const apiInfo = pageData[currentPage][inferenceIndex]
 
   const nextPage = () => {
-    if (currentPage < pageData.length) {
+    if (currentPage < pageData.length - 1) {
       setCurrentPage(currentPage + 1);
     }
-    else {
-      setCurrentPage(0);
-    }
-    getPageContent();
   };
 
   const prevPage = () => {
     if (currentPage > 0) {
       setCurrentPage(currentPage - 1);
     }
-    else {
-      setCurrentPage(pageData.length - 1);
-    }
-    getPageContent();
   };
 
-  const getPageContent = () => {
+  // const getPageContent = () => {
 
-    if (pageData) {
-      const getGIF = () => {
-        setCurrentGIF(pageData[currentPage][gifIndex]);
-      };
+  //   if (0 < pageData < pageData.length ) {
+  //     const getGIF = () => {
+  //       setCurrentGIF(pageData[currentPage][gifIndex]);
+  //     };
 
-      const getText = () => {
-        setCurrentText(pageData[currentPage][textIndex]);
-      };
+  //     const getText = () => {
+  //       setCurrentText(pageData[currentPage][textIndex]);
+  //     };
 
-      const getAPIInfo = () => {
-        setAPIInfo(pageData[currentPage][inferenceIndex]);
-      };
-      getGIF();
-      getText();
-      getAPIInfo();
-    }
-  };
+  //     const getAPIInfo = () => {
+  //       setAPIInfo(pageData[currentPage][inferenceIndex]);
+  //     };
+  //     getGIF();
+  //     getText();
+  //     getAPIInfo();
+  //   }
+  // };
 
   const variants = {
     hidden: { opacity: 0 },
@@ -91,7 +85,7 @@ const WhatIsAPI = () => {
             <button
               className="flex items-center justify-center w-10 h-10 text-indigo-600 transition-colors duration-150 rounded-full focus:shadow-outline hover:bg-indigo-100"
               onClick={prevPage}
-              disabled={currentPage < 1}
+              disabled={currentPage < 0}
             >
               <svg class="w-8 h-8 fill-current" viewBox="0 0 20 20">
                 <path
