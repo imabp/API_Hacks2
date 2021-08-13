@@ -35,12 +35,12 @@ const HackThemes = () => {
                     with that. just make sure, you describe the problem well.
                 </div>
                 <div style={{ marginTop: "-2rem" }}>
-                    <WaveBTN type="btn" text={hint1 ? "ohh wow!" : "need some hints"} onClick={() => { setHint1(!hint1) }} />
+                    <WaveBTN type="btn-fade" text={hint1 ? "ohh wow!" : "need some hints"} onClick={() => { setHint1(!hint1) }} />
                 </div>
                 {hint1 &&
                     <><br />shhh... just an idea, you can build an extension to<br /> schedule msteam meeting and use microsoft auth.
                     </>
-                }
+                }<br /><br />
             </p>
         </div>
     );
