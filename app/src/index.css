@@ -3,18 +3,40 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "FiraCode-Regular";
-  src: local("FiraCode-Regular.woff"),
-    url("./fonts/FiraCode-Regular.woff") format("woff");
+  font-family: "Gilroy";
+  src: local("gilroy.otf"), url("./core/fonts/gilroy.otf");
 }
-
+@font-face {
+  font-family: "Gilroy Light";
+  src: local("gilroylight.otf"), url("./core/fonts/gilroylight.otf");
+}
 body {
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "FiraCode-Regular";
+  font-family: "Gilroy";
 }
+.fontLight {
+  font-family: "Gilroy Light";
+  font-weight: 700;
+}
+.navbar {
+  font-family: "Gilroy Light" !important;
+}
+
 .root {
   background: #fff6eb;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #f8ead7);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #ddcaaf);
+  border-radius: 6px;
 }
