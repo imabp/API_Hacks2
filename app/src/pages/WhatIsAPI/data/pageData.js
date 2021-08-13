@@ -2,7 +2,7 @@ const pageData = {
   pageData: [
     {
       gif: "https://cdn.discordapp.com/attachments/874607271848607754/875381942860775444/ezgif.com-gif-maker.gif",
-      text: "Carl asked his driver to help him reach carl santos.",
+      text: "Carl asked his driver to help him reach los santos.",
       inference: "(API called)",
     },
     {

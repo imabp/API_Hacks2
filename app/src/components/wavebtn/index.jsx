@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom';
 import './index.css'
 const WaveBTN = (props) => {
 
-    let { type, text, route, onClick } = props;
+    let { type, text, route, onClick, anim } = props;
     if (!text)
         text = "WaveBTN";
-
+    if (anim === undefined || anim === null)
+        anim = false
     switch (type) {
         case 'btn':
             return (<motion.button

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import page from "./data/pageData";
+import { Link } from "react-router-dom";
 
 const pageData = page.pageData;
 
@@ -38,7 +39,7 @@ const WhatIsAPI = () => {
 
       <div className="mt-4 text-xl md:1xl lg:text-3xl">
         <b>🧩 what's an api ?</b> <br />
-        <div className="mt-6 text-xs md:sm lg:text-2xl leading-6 md:leading-8 lg:leading-10">
+        <div className="fontLight mt-6 text-xs md:sm lg:text-2xl leading-6 md:leading-8 lg:leading-10">
           if you are reading this, we certainly believe, you are
           new to the world of apis.
           <br /> lets see this story...
@@ -113,12 +114,16 @@ const WhatIsAPI = () => {
 
         <div className="mt-14 md:mt-20 flex flex-col ">
           🚀 why api hacks?
-          <div className="mt-6 text-xs md:sm lg:text-2xl leading-6 md:leading-8 lg:leading-10">
+          <div className="fontLight mt-6 text-xs md:sm lg:text-xl leading-6 md:leading-8 lg:leading-10">
             be it a beginner, or an expert, api hacks focusses on helping developers
             to know the power of apis and work on building api literacy among students
             and professionals.
             <br /><br />
-            what are you waiting for?<br /> join the hackathon!
+            what are you waiting for?<br />
+            <Link to="/">
+              <div style={{ fontWeight: 900 }}>join the hackathon!
+              </div>
+            </Link>
             <br />
           </div>
 

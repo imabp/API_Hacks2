@@ -7,7 +7,7 @@ import { WaveBTN } from "../../components";
 class Landing extends React.Component {
   render() {
     return (
-      <div className="home text-xl pl-6 md:pl-12 pt-10 h-screen absolute">
+      <div className="home text-xl pl-6 md:pl-12 pt-10 h-screen ">
         <motion.div
           className="circle"
           animate={{
