@@ -102,7 +102,7 @@ const WhatIsAPI = () => {
 
         <div className="mt-14 md:mt-20 flex flex-col ">
           🚀 diving bit deeper . . .<br /><br />why api first approach?
-          <div className="mt-6 text-xs md:sm lg:text-2xl leading-6 md:leading-8 lg:leading-10">
+          <div className="fontLight mt-6 text-xs md:sm lg:text-2xl leading-6 md:leading-8 lg:leading-10">
             ensures good developer experiences
             <br />development teams can work in parallel and share the same code
             <br />reduces the cost of developing apps

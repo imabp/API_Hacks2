@@ -7,10 +7,7 @@ import { WaveBTN } from "../../components";
 function Nav({ Link }) {
   const [toggle, setToggle] = React.useState(false);
   return (
-    <div
-      class="navbar"
-      // style={{visibility:toggle}}
-    >
+    <div class="navbar" style={{ paddingTop: "-0.8rem" }}>
       <input
         type="checkbox"
         id="navbar-toggle"

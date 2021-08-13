@@ -11,7 +11,7 @@ const Workshops = () => {
         <br />
         call for speakers are open! <br />let us know about abour your speaker
         proposal.<br />
-        <WaveBTN anim="ease" type="btn" text="submit your proposal" />
+        <WaveBTN type="btn-fade" text="submit your proposal" />
       </p>
 
     </div>
