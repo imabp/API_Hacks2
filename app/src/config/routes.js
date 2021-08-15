@@ -1,4 +1,6 @@
 import {
+  Network,
+  HackerMedia,
   Registration,
   Staff,
   AboutAPI,
@@ -10,7 +12,7 @@ import {
 const ROUTES = [
   {
     path: "/what-is-api",
-    displayName: "What is an API?",
+    displayName: "What's' an API?",
     isExternal: false,
     exact: true,
     component: () => (
@@ -32,7 +34,7 @@ const ROUTES = [
   },
   {
     path: "/workshop",
-    displayName: "Awesome Workshops",
+    displayName: "call for speakers",
     isExternal: false,
     exact: true,
     component: () => (
@@ -68,14 +70,22 @@ const ROUTES = [
     displayName: "Our Hacker Media",
     isExternal: false,
     exact: true,
-    component: () => <></>,
+    component: () => (
+      <>
+        <HackerMedia />
+      </>
+    ),
   },
   {
     path: "/hiring",
     displayName: "Network and Hiring",
     isExternal: false,
     exact: true,
-    component: () => <></>,
+    component: () => (
+      <>
+        <Network />
+      </>
+    ),
   },
 ];
 export default ROUTES;

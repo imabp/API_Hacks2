@@ -1,12 +1,13 @@
 import React from "react";
 import ROUTES from "../../config/routes";
-import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 import "./index.css";
-
+import { WaveBTN } from "../../components";
 function Nav({ Link }) {
   const [toggle, setToggle] = React.useState(false);
   return (
-    <div class="navbar">
+    <div class="navbar" style={{ paddingTop: "-0.8rem" }}>
       <input
         type="checkbox"
         id="navbar-toggle"
@@ -22,32 +23,32 @@ function Nav({ Link }) {
       <div className="h-screen absolute right-0 nav menu">
         <ul className="m-auto w-full h-screen flex flex-col justify-center text-center">
           <li className="text text-2xl">
-            What you Looking for?
-            <br></br>
-            Might be here ;)
+            <Link to="/">
+              <FontAwesomeIcon
+                icon={faHome}
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                  setToggle(!toggle);
+                }}
+              />
+            </Link>
           </li>
+          <li className="text text-2xl">
+            what you looking for?
+            <br />
+            might be here ;)
+          </li>
+
           {ROUTES.map((route) => (
-            <motion.li
-              whileHover={{
-                scale: 1.2,
-                originX: 0.5,
+            <WaveBTN
+              onClick={() => {
+                window.scrollTo(0, 0);
+                setToggle(!toggle);
               }}
-              transition={{
-                type: "spring",
-                stiffness: 300,
-              }}
-            >
-              <Link to={route.path} isExternal={route.isExternal}>
-                <button
-                  class="py-2 button button2"
-                  onClick={() => {
-                    setToggle(!toggle);
-                  }}
-                >
-                  {route.displayName}
-                </button>
-              </Link>
-            </motion.li>
+              type="nav-btn"
+              text={route.displayName}
+              route={route}
+            />
           ))}
         </ul>
       </div>
