@@ -3,14 +3,14 @@ import { WaveBTN } from "../../components";
 const HackThemes = () => {
     const [hint1, setHint1] = React.useState(false);
     return (
-        <div className="text-xl pl-6 md:pl-12 pt-10 h-screen">
-            <h1>🌈 hack theme</h1><br />
+        <div className="text-xl px-6 md:px-12 pt-10 h-screen">
+            <h1>🌈 hack-a-theme</h1><br />
             <p>themes are very important to know your project use cases.
                 <br />
                 <div className="fontLight">
-                    at api hacks, as such, hackers are allowed to be more
-                    creative, and have open theme. <br />you
-                    can choose any tech stack, just make sure, it is presentable.
+                at api hacks, we encourage our hackers to be more creative
+                by providing an open theme. <br />
+                you can choose any tech stack, just make sure, it is presentable.
                 </div>
                 <br />
                 few themes, that we feel are good to go with, are:
