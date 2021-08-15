@@ -1,6 +1,6 @@
 import React from "react";
-import ROUTES from "../../config/routes";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ROUTES from "../../config/routes";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import "./index.css";
 import { WaveBTN } from "../../components";
