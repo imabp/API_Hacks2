@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./index.css";
 import { WaveBTN } from "../../components";
-
+import { Notification } from "../../core";
 
 class Landing extends React.Component {
   render() {
@@ -91,8 +91,9 @@ class Landing extends React.Component {
         </motion.div>
         <a href="http://discord.apihacks.co/">
           <WaveBTN type="btn" text="interested? join us" />
-        </a>
 
+        </a>
+        <br />  <br />
         <motion.div
           class="absolute bottom-0 pb-6"
           initial={{
@@ -111,10 +112,11 @@ class Landing extends React.Component {
             },
           }}
         >
+          <Notification /><br /><br />
           want to talk to us? <br />
           <span className="font-bold">
             <a href="mailto:staff@apihacks.co">staff@apihacks.co</a>
-          </span>
+          </span><br /><br />
         </motion.div>
       </div>
     );

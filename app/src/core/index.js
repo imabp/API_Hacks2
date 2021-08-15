@@ -1,2 +1,3 @@
 import Nav from "./nav";
-export { Nav };
+import Notification from "./Notification";
+export { Nav, Notification };
