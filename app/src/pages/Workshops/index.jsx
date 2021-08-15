@@ -19,9 +19,9 @@ const Workshops = () => {
       <b>important dates</b>
       <div className="fontLight">
 
-        speaker proposals:<br /> 1st August 2021 - 2nd October 2021<br /><br />
-        workshops starting from:<br /> 20th August 2021 - 10th October 2021<br /><br />
-        hackathon dates:<br />15th October 2021 - 16th October 2021
+        speaker proposals:<br /> 1st august 2021 - 2nd october 2021<br /><br />
+        workshops starting from:<br /> 20th august 2021 - 10th october 2021<br /><br />
+        hackathon dates:<br />15th october 2021 - 16th october 2021
       </div>
     </div>
   );
