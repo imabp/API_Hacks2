@@ -12,7 +12,7 @@ const WaveBTN = (props) => {
     switch (type) {
         case 'btn':
             return (<motion.button
-                class="button ptext-base md:text-lg text-black mt-12 py-2 px-4 btn"
+                className="button ptext-base md:text-lg text-black mt-4 mb-4 px-4 btn"
                 initial={{
                     opacity: 0,
                     y: "-100vw",
@@ -42,24 +42,39 @@ const WaveBTN = (props) => {
                     stiffness: 300
                 }}>
                 <Link to={route.path} isExternal={route.isExternal}>
-                    <button style={{ fontSize: '0.9rem', border: "0.1px solid orange" }} onClick={onClick} class="  py-2 button2">
+                    <button style={{ fontSize: '0.9rem', border: "0.1px solid orange" }} onClick={onClick} className="  py-2 button2">
                         <b>{route.displayName.toLowerCase()}</b>
                     </button>
                 </Link>
             </motion.li>);
         case 'btn-fade':
-            return (<motion.button
-                class="button ptext-base md:text-lg text-black mt-12 py-2 px-4 btn"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ ease: [0.17, 0.67, 0.83, 1] }}
-                onClick={onClick ? onClick : () => { }}
-            >
-                {props.text}
-            </motion.button>)
+            return (
+                <motion.button
+                    className="button ptext-base md:text-lg text-black mt-4 mb-4 py-2 px-4 btn"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ ease: [0.17, 0.67, 0.83, 1] }}
+                    onClick={onClick ? onClick : () => { }}
+                >
+                    {route ?
+                        route.isExternal ? (<>
+                            <button style={{ fontSize: '0.9rem', border: "0.1px solid orange" }} onClick={onClick} className="  py-2 button2">
+                                <a href={route.path} target="_blank" rel="noopenner noreferrer" > <b>{route.displayName.toLowerCase()}</b>
+                                </a> </button>
+                        </>) : (<><Link to={route.path} isExternal={route.isExternal}>
+                            <button style={{ fontSize: '0.9rem', border: "0.1px solid orange" }} onClick={onClick} className="  py-2 button2">
+                                <b>{route.displayName.toLowerCase()}</b>
+                            </button>
+                        </Link></>)
+
+                        :
+                        (<><button style={{ fontSize: '0.9rem' }} onClick={onClick}>
+                            <b> {props.text.toLowerCase()}</b>
+                        </button></>)}
+                </motion.button>)
         default:
             return (<motion.button
-                class="button ptext-base md:text-lg text-black mt-12 py-2 px-4 btn"
+                className="button ptext-base md:text-lg text-black mt-12 py-2 px-4 btn"
                 initial={{
                     opacity: 0,
                     y: "-100vw",

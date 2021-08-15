@@ -1,4 +1,6 @@
 import {
+  Network,
+  HackerMedia,
   Registration,
   Staff,
   AboutAPI,
@@ -68,14 +70,22 @@ const ROUTES = [
     displayName: "Our Hacker Media",
     isExternal: false,
     exact: true,
-    component: () => <></>,
+    component: () => (
+      <>
+        <HackerMedia />
+      </>
+    ),
   },
   {
     path: "/hiring",
     displayName: "Network and Hiring",
     isExternal: false,
     exact: true,
-    component: () => <></>,
+    component: () => (
+      <>
+        <Network />
+      </>
+    ),
   },
 ];
 export default ROUTES;

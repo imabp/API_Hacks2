@@ -3,8 +3,8 @@ import "./App.css";
 import { RenderConfig } from "./config";
 // using react router
 import { useLocation } from "react-router-dom";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { Home } from "./pages";
+import { Switch, Route, Link } from "react-router-dom";
+import { Home, PageNotFound } from "./pages";
 import { Nav } from "./core";
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
         <Switch>
           <Route key="/" path="/" exact={true} children={<Home />} />
           <RenderConfig />
+          <Route component={PageNotFound} />
         </Switch>
       </div>
       <Nav Link={Link} />

@@ -24,7 +24,13 @@ function Nav({ Link }) {
         <ul className="m-auto w-full h-screen flex flex-col justify-center text-center">
           <li className="text text-2xl">
             <Link to="/">
-              <FontAwesomeIcon icon={faHome} />
+              <FontAwesomeIcon
+                icon={faHome}
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                  setToggle(!toggle);
+                }}
+              />
             </Link>
           </li>
           <li className="text text-2xl">
