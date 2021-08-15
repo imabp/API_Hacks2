@@ -1,13 +1,13 @@
 import React from "react";
-import ROUTES from "../../config/routes";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ROUTES from "../../config/routes";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import "./index.css";
 import { WaveBTN } from "../../components";
 function Nav({ Link }) {
   const [toggle, setToggle] = React.useState(false);
   return (
-    <div class="navbar" style={{ paddingTop: "-0.8rem" }}>
+    <div className="navbar" style={{ paddingTop: "-0.8rem" }}>
       <input
         type="checkbox"
         id="navbar-toggle"

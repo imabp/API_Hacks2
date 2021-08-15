@@ -1,7 +1,7 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import page from "./data/pageData";
-import { Link } from "react-router-dom";
 
 const pageData = page.pageData;
 
@@ -35,11 +35,11 @@ const WhatIsAPI = () => {
 
 
   return (
-    <div style={{ width: "100%" }} className="flex flex-col justify-center items-center px-6 md:px-12 overflow-x-visible my-8">
+    <div className="w-full flex flex-col justify-center items-center px-6 md:px-12 my-8 text-base md:text-xl lg:text-2xl leading-6 md:leading-8 lg:leading-10">
 
-      <div className="mt-4 text-xl md:1xl lg:text-3xl">
+      <div className="mt-4">
         <b>🧩 what's an api ?</b> <br />
-        <div className="fontLight mt-6 text-xs md:sm lg:text-2xl leading-6 md:leading-8 lg:leading-10">
+        <div className="fontLight mt-6">
           if you are reading this, we certainly believe, you are
           new to the world of apis.
           <br /> lets see this story...
@@ -51,7 +51,7 @@ const WhatIsAPI = () => {
           animate="visible"
           variants={variants}
           transition={{ duration: 2 }}
-          className="flex flex-col md:flex-row items-center text-sm md:xl lg:text-2xl leading-6 md:leading-8 lg:leading-10"
+          className="flex flex-col md:flex-row items-center"
         >
           <img
             src={currentGIF}
@@ -61,7 +61,7 @@ const WhatIsAPI = () => {
           <span className="pt-6 md:pl-4">
             {currentText.toLowerCase()}{" "}<br />
             <strong>{apiInfo.toLowerCase()}</strong><br />
-            {currentPage === pageData.length - 1 && <>Now it's your choice, what do you have to do with the data. You may
+            {currentPage === pageData.length - 1 && <> <br />Now it's your choice, what do you have to do with the data. You may
               perform some computation on it or show it right away.
             </>}
           </span>
@@ -102,30 +102,28 @@ const WhatIsAPI = () => {
 
         <div className="mt-14 md:mt-20 flex flex-col ">
           🚀 diving bit deeper . . .<br /><br />why api first approach?
-          <div className="fontLight mt-6 text-xs md:sm lg:text-2xl leading-6 md:leading-8 lg:leading-10">
-            ensures good developer experiences
-            <br />development teams can work in parallel and share the same code
-            <br />reduces the cost of developing apps
-            <br /> increases the speed to market
-            <br /> reduces the risk of failure
-
+          <div className="fontLight mt-6 text-lg md:text-xl lg:text-2xl leading-6 md:leading-8 lg:leading-10 ml-4 md:ml-8 lg:ml-12">
+            <li>ensures good developer experiences </li>
+            <li>development teams can work in parallel and share the same code </li>
+            <li>reduces the cost of developing apps </li>
+            <li>increases the speed to market </li>
+            <li>reduces the risk of failure </li>
           </div>
         </div>
 
         <div className="mt-14 md:mt-20 flex flex-col ">
           🚀 why api hacks?
-          <div className="fontLight mt-6 text-xs md:sm lg:text-xl leading-6 md:leading-8 lg:leading-10">
+          <div className="fontLight mt-6">
             be it a beginner, or an expert, api hacks focusses on helping developers
             to know the power of apis and work on building api literacy among students
             and professionals.
             <br /><br />
             what are you waiting for?<br />
+          </div>
             <Link to="/">
-              <div style={{ fontWeight: 900 }}>join the hackathon!
+              <div className="font-medium">join the hackathon!
               </div>
             </Link>
-            <br />
-          </div>
 
         </div>
 

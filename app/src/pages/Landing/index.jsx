@@ -7,7 +7,7 @@ import { Notification } from "../../core";
 class Landing extends React.Component {
   render() {
     return (
-      <div className="home text-xl pl-6 md:pl-12 pt-10 h-screen ">
+      <div className="home text-xl pl-6 md:pl-12 pt-2 h-screen ">
         <motion.div
           className="circle"
           animate={{
@@ -44,7 +44,7 @@ class Landing extends React.Component {
             },
           }}
         >
-          on this <br /> 15th-16th october, 2021
+          on <br /> 15th-16th october, 2021
         </motion.div>
         <motion.div
           className="text-6xl md:text-8xl pt-5"
@@ -117,6 +117,7 @@ class Landing extends React.Component {
           <span className="font-bold">
             <a href="mailto:staff@apihacks.co">staff@apihacks.co</a>
           </span><br /><br />
+
         </motion.div>
       </div>
     );
