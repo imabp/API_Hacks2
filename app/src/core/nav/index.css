@@ -1,3 +1,6 @@
+:root {
+  --main-nav-bg-color: #ea9732;
+}
 li {
   margin: 15px auto;
 }
@@ -12,7 +15,7 @@ li {
 
 .nav {
   display: flex;
-  background: #e19c4b;
+  background: var(--main-nav-bg-color);
   width: 35vw;
   height: 100vh;
 }
@@ -34,7 +37,7 @@ li {
     bottom: 20px;
     right: 20px;
     z-index: 1;
-    background-color: #e19c4b;
+    background-color: var(--main-nav-bg-color);
     border-radius: 50%;
   }
 
