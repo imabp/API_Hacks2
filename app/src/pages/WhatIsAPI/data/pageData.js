@@ -15,6 +15,11 @@ const pageData = {
       text: "Carl finally reached Los Santos within 2 hours.",
       inference: "(Response Received from API)",
     },
+    {
+      gif: "https://cdn.discordapp.com/attachments/874607271848607754/877927348878602240/last_image.gif",
+      text: "Now it's your choice, what do you have to do with the data. You may perform some computation on it or show it right away.",
+      inference: "",
+    }
   ],
 };
 

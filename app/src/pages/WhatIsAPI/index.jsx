@@ -61,16 +61,14 @@ const WhatIsAPI = () => {
           <span className="pt-6 md:pl-4">
             {currentText.toLowerCase()}{" "}<br />
             <strong>{apiInfo.toLowerCase()}</strong><br />
-            {currentPage === pageData.length - 1 && <> <br />Now it's your choice, what do you have to do with the data. You may
-              perform some computation on it or show it right away.
-            </>}
+            {currentPage === pageData.length - 1}
           </span>
         </motion.div>
         {/* buttons */}
         <ul class="inline-flex space-x-2 mt-4">
           <li>
             <button
-              className="flex items-center justify-center w-10 h-10 text-indigo-600 transition-colors duration-150 rounded-full focus:shadow-outline hover:bg-indigo-100"
+              className="flex items-center justify-center w-10 h-10 text-indigo-600 transition-colors duration-150 bg-white rounded-full focus:shadow-outline hover:bg-indigo-100"
               onClick={prevPage}
               disabled={currentPage < 0}
             >
