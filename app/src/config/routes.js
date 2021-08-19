@@ -45,7 +45,7 @@ const ROUTES = [
   },
   {
     path: "/sponsors",
-    displayName: "Sponsors",
+    displayName: "Sponsors and Brochure",
     isExternal: false,
     exact: true,
     component: () => (
