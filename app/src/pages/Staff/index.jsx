@@ -11,12 +11,17 @@ const Staff = () => {
             .then((data) => { setStaffData(data) })
             .catch(error => console.log(error))
     }, []);
-    return (
+    return (<>
+        <div className=" text-xl pl-6 md:pl-12 pt-10 ">
+           meet our hackathon staff. one thing common in all of us is <br/>we are always up to learn things by building them out... 
+        </div>
         <div className="container">
-
+            
             {
                 StaffData.staff && StaffData.staff.map((member, id) => {
                     return (
+                        <>
+                        <a href={member.linkedin} target="_blank" rel="noreferrer">
                         <motion.div className="card"
                             initial={{
                                 opacity: 0,
@@ -36,18 +41,22 @@ const Staff = () => {
                                 <div className="contentBx">
                                     <h4>{member.name.toLowerCase()}</h4>
                                     <h5>{member.description.toLowerCase()}</h5>
+                             
                                     {member.linkedin && <><FontAwesomeIcon icon={["fab", "linkedin"]} /></>}
                                     {member.github && <><FontAwesomeIcon icon={["fab", "github"]} /></>}
                                     {member.twitter && <><FontAwesomeIcon icon={["fab", "twitter"]} /></>}
                                 </div>
                             </div>
-                        </motion.div>
+                            </motion.div>
+                            </a>
+                            </>
                     )
                 }
                 )
             }
 
         </div>
+        </>
 
     );
 }

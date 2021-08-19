@@ -54,17 +54,7 @@ const ROUTES = [
       </>
     ),
   },
-  {
-    path: "/staff",
-    displayName: "Staff",
-    isExternal: false,
-    exact: true,
-    component: () => (
-      <>
-        <Staff />
-      </>
-    ),
-  },
+
   {
     path: "/blog",
     displayName: "Our Hacker Media",
@@ -84,6 +74,17 @@ const ROUTES = [
     component: () => (
       <>
         <Network />
+      </>
+    ),
+  },
+  {
+    path: "/staff",
+    displayName: "hackathon Staff",
+    isExternal: false,
+    exact: true,
+    component: () => (
+      <>
+        <Staff />
       </>
     ),
   },
