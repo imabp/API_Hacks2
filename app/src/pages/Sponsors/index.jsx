@@ -17,7 +17,7 @@ const Sponsor = () => {
         <div className=" text-xl pl-6 md:pl-12 pt-10 h-screen">
             our awesome sponsors are coming super soon!!<br />
             wanna be one of them?<br /><Link to="/brochure">
-                <span style={{ color: 'gray' }}>Find our brochure..</span>
+                <span style={{ color: 'gray' }}>see our brochure..</span>
             </Link>
             <>
 
@@ -63,7 +63,7 @@ const Sponsor = () => {
                         </div>
                     </div>
                     <div className="md:flex md:items-center mb-6">
-                        <textarea onChange={(e) => { setMsg(e.target.value) }} value={msg} placeholder="We are looking to help api hacks..." className="resize-none border rounded-md p-4 w-full fontLight" style={{ height: '200px' }} ></textarea>
+                        <textarea onChange={(e) => { setMsg(e.target.value) }} value={msg} placeholder="we are looking to help api hacks..." className="resize-none border rounded-md p-4 w-full fontLight" style={{ height: '200px' }} ></textarea>
                     </div>
 
                 </form>
