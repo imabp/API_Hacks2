@@ -54,7 +54,7 @@ const WaveBTN = (props) => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ ease: [0.17, 0.67, 0.83, 1] }}
-                    onClick={onClick ? onClick : () => { }}
+                   onClick={onClick ? onClick : () => { }}
                 >
                     {route ?
                         route.isExternal ? (<>
@@ -68,7 +68,7 @@ const WaveBTN = (props) => {
                         </Link></>)
 
                         :
-                        (<><button style={{ fontSize: '0.9rem' }} onClick={onClick}>
+                        (<><button style={{ fontSize: '0.9rem' }}>
                             <b> {props.text.toLowerCase()}</b>
                         </button></>)}
                 </motion.button>)

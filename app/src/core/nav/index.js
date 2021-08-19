@@ -4,6 +4,7 @@ import ROUTES from "../../config/routes";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import "./index.css";
 import { WaveBTN } from "../../components";
+import Notification from "../Notification";
 function Nav({ Link }) {
   const [toggle, setToggle] = React.useState(false);
   return (
@@ -22,7 +23,7 @@ function Nav({ Link }) {
 
       <div className="h-screen absolute right-0 nav menu">
         <ul className="m-auto w-full h-screen flex flex-col justify-center text-center">
-          <li className="text text-2xl">
+          <li className="text text-2xl" style={{ padding: "-2px" }}>
             <Link to="/">
               <FontAwesomeIcon
                 icon={faHome}
@@ -33,6 +34,7 @@ function Nav({ Link }) {
               />
             </Link>
           </li>
+          {/* <Notification /> */}
           <li className="text text-2xl">
             what you looking for?
             <br />
