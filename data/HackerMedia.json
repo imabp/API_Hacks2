@@ -1,28 +1,22 @@
 {
-    "data": [
-        {
-            "title": "project 1",
-            "img": "https://cdn.discordapp.com/attachments/874607271848607754/877935440152375326/unknown.png",
-            "text": "adding it soon",
-            "link": "https://ankitzm.co/type-it-all"
-        },
-      {
-            "title": "article/project title 2",
-            "img": "https://cdn.discordapp.com/attachments/874149053313716284/874155918785400882/ssss_1.png",
-            "text": "some text to display",
-            "link": "https://twitter.com/"
-        },
-      {
-            "title": "article/project title 3",
-            "img": "https://cdn.discordapp.com/attachments/874149053313716284/874155918785400882/ssss_1.png",
-            "text": "some text to display",
-            "link": "https://twitter.com/"
-        },
-        {
-            "title": "Type It All",
-            "img": "https://cdn.discordapp.com/attachments/874607271848607754/877935440152375326/unknown.png",
-            "text": "A react App to test Typing speed",
-            "link": "https://ankitzm.co/type-it-all"
-        }
-    ]
+  "data": [
+    {
+      "title": "BlogTraversy",
+      "img": "https://cdn.discordapp.com/attachments/874607271848607754/877972962119155752/68747470733a2f2f6d656469612e646973636f72646170702e6e65742f6174746163686d656e74732f383334313330353536.png",
+      "text": "A tool to fetch your blogs from the internet",
+      "link": "https://www.npmjs.com/package/blogtraversy"
+    },
+    {
+      "title": "Megapicker",
+      "img": "https://cdn.discordapp.com/attachments/874607271848607754/877974099450810408/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3835363139333234343432.png",
+      "text": "A CLI to create ALL your projects",
+      "link": "https://www.npmjs.com/package/megapicker"
+    },
+    {
+      "title": "Type It All",
+      "img": "https://cdn.discordapp.com/attachments/874607271848607754/877935440152375326/unknown.png",
+      "text": "A react App to test your Typing speed",
+      "link": "https://ankitzm.co/type-it-all"
+    }
+  ]
 }
