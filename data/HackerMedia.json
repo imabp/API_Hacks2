@@ -1,10 +1,10 @@
 {
     "data": [
         {
-            "title": "article/project title 1",
-            "img": "https://cdn.discordapp.com/attachments/874149053313716284/874155918785400882/ssss_1.png",
-            "text": "some text to display",
-            "link": "https://twitter.com/"
+            "title": "Type It All",
+            "img": "",
+            "text": "A react App to test Typing speed",
+            "link": "https://ankitzm.co/type-it-all"
         },
       {
             "title": "article/project title 2",
