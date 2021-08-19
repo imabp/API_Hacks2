@@ -1,4 +1,5 @@
 import React from "react";
+import Brochure from "../pages/Brochure";
 import BrandAssets from "./../core/brand_assets";
 const HIDDEN_ROUTES = {
   sessionize: {
@@ -6,6 +7,17 @@ const HIDDEN_ROUTES = {
     displayName: "submit your proposal",
     isExternal: true,
     exact: true,
+  },
+  brochure: {
+    path: "/brochure",
+    displayName: "brochure",
+    isExternal: false,
+    exact: true,
+    component: () => (
+      <>
+      <Brochure/>
+      </>
+    ),
   },
   brandassets: {
     path: "/brand_assets",

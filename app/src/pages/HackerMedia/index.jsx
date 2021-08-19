@@ -30,7 +30,7 @@ const HackerMedia = () => {
                                         <div className="text-base">
                                             {mediaData.text}
                                         </div>
-                                        <a href={mediaData.link} target="_blank">
+                                        <a rel="noreferrer" href={mediaData.link} target="_blank">
                                             <WaveBTN type="btn-fade" text="Read More" />
                                         </a>
                                     </div>
