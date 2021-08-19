@@ -13,7 +13,8 @@ const HackerMedia = () => {
 
     return (
         <div className="text-xl px-6 md:px-12 pt-10 h-screen">
-            📌  our hacker media
+            📌 browse our hacker collections and their amazing work here. 
+            <br/><br/>
             {/* card container */}
             <div className="flex flex-wrap justify-evenly m-2">
                 {
