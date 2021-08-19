@@ -22,7 +22,7 @@ const HackerMedia = () => {
                         return (
                             // for cards
                             <div key={id}>
-                                <div className="flex flex-col items-center p-2 md:p-4 bg-white border-2 rounded-lg shadow-sm m-2">
+                                <div className="flex flex-col items-center p-2 w-52 sm:w-60 sm:w-64 md:p-4 bg-white border-2 rounded-lg shadow-sm m-2">
                                     <img alt="img" className="rounded-md w-28 h-28 sm:w-40 sm:h-40 lg:w-44 lg:h-44" src={mediaData.img} />
                                     <div className="flex flex-col mt-2 md:mt-4">
                                         <div className="text-xl">
