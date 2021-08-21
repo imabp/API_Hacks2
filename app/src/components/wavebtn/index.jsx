@@ -10,6 +10,27 @@ const WaveBTN = (props) => {
     if (anim === undefined || anim === null)
         anim = false
     switch (type) {
+        case 'btn-discord':return(<>
+            <motion.button
+                className="buttonDiscord ptext-base md:text-lg text-black mt-4 mb-4 px-4 btn"
+                initial={{
+                    opacity: 0,
+                    y: "-100vw",
+                }}
+                animate={{
+                    opacity: 1,
+                    y: 0,
+                    zIndex: 1,
+                    transition: {
+                        type: "spring",
+                        stiffness: 50,
+                        duration: 3,
+                    },
+                }}
+                onClick={onClick ? onClick : () => { }}
+            >
+                {props.text}
+            </motion.button></>)
         case 'btn':
             return (<motion.button
                 className="button ptext-base md:text-lg text-black mt-4 mb-4 px-4 btn"

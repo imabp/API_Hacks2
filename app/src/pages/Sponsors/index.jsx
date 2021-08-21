@@ -15,6 +15,7 @@ const Sponsor = () => {
     }
     return (
         <div className=" text-xl pl-6 md:pl-12 pt-10 h-screen">
+            <div className="text-4xl">🧏‍♂️ Sponsors </div><br />
             our awesome sponsors are coming super soon!!<br />
             wanna be one of them?<br /><Link to="/brochure">
                 <span style={{ color: 'gray' }}>see our brochure..</span>

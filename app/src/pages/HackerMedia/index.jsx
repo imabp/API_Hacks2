@@ -13,7 +13,13 @@ const HackerMedia = () => {
 
     return (
         <div className="text-xl px-6 md:px-12 pt-10 h-screen">
-            📌 browse our hacker collections and their amazing work here. 
+            <div className="text-3xl"> 📸 hacker media</div>
+             <div className="fontLight">browse our hacker collections and their amazing work here. <br/>
+                want to see your project here? <br /></div>
+            <a style={{ marginRight: '4px' }} href="http://discord.apihacks.co/" target="_blank" rel="noopenner noreferrer">
+                <WaveBTN type="btn-discord" text="join us on discord" />
+
+            </a>
             <br/><br/>
             {/* card container */}
             <div className="flex flex-wrap justify-evenly m-2">
@@ -26,10 +32,10 @@ const HackerMedia = () => {
                                     <img alt="img" className="rounded-md w-28 h-28 sm:w-40 sm:h-40 lg:w-44 lg:h-44" src={mediaData.img} />
                                     <div className="flex flex-col mt-2 md:mt-4">
                                         <div className="text-xl">
-                                            {mediaData.title}
+                                            {mediaData.title.toLowerCase()}
                                         </div>
                                         <div className="text-base">
-                                            {mediaData.text}
+                                            {mediaData.text.toLowerCase()}
                                         </div>
                                         <a rel="noreferrer" href={mediaData.link} target="_blank">
                                             <WaveBTN type="btn-fade" text="Read More" />
