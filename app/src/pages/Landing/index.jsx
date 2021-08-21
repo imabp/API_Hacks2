@@ -2,7 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./index.css";
 import { WaveBTN } from "../../components";
-import { Notification } from "../../core";
+import { Link } from "react-router-dom";
+// import { Notification } from "../../core";
 
 const Landing = () => {
 
@@ -26,26 +27,6 @@ const Landing = () => {
       }}
     />
     <motion.div
-      className="text-2xl md:text-2xl mt-5"
-      initial={{
-        opacity: 0,
-        y: "-100vw",
-      }}
-      animate={{
-        opacity: 1,
-        y: 0,
-        zIndex: 1,
-        transition: {
-          type: "spring",
-          stiffness: 50,
-          duration: 3,
-          delay: 0.7,
-        },
-      }}
-    >
-      on <br /> 15th-16th october, 2021
-    </motion.div>
-    <motion.div
       className="text-6xl md:text-8xl pt-5"
       initial={{
         opacity: 0,
@@ -68,7 +49,7 @@ const Landing = () => {
       <motion.span className="font-black">2.0</motion.span>
     </motion.div>
     <motion.div
-      className="mt-5 md: text-2xl md:text-3xl"
+      className="text-2xl md:text-2xl mt-5"
       initial={{
         opacity: 0,
         y: "-100vw",
@@ -81,6 +62,27 @@ const Landing = () => {
           type: "spring",
           stiffness: 50,
           duration: 3,
+          delay: 0.7,
+        },
+      }}
+    >
+      15th-16th october, 2021
+    </motion.div>
+
+    <motion.div
+      className="mt-5 md: text-2xl md:text-3xl"
+      initial={{
+        opacity: 0,
+        y: "-100vw",
+      }}
+      animate={{
+        opacity: 1,
+        y: 0,
+        zIndex: 1,
+        transition: {
+          type: "spring", 
+          stiffness: 50,
+          duration: 3,
           delay: 0.9,
         },
       }}
@@ -88,10 +90,14 @@ const Landing = () => {
       build your <br />
       digital footprint as <br />a student developer
     </motion.div>
-    <a href="http://discord.apihacks.co/" target="_blank" rel="noopenner noreferrer">
-      <WaveBTN type="btn" text="interested? join us" />
+    <a style={{marginRight:'4px'}} href="http://discord.apihacks.co/" target="_blank" rel="noopenner noreferrer">
+      <WaveBTN type="btn-discord" text="join us on discord" />
 
     </a>
+    <Link to="/brochure">
+      <WaveBTN type="btn" text="View Brochure" />
+
+    </Link>
     <br />  <br />
     <motion.div
       className="absolute bottom-5 pb-6"

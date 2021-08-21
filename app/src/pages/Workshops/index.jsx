@@ -4,18 +4,18 @@ import HIDDEN_ROUTES from "../../config/hidden.routes";
 const Workshops = () => {
   return (
     <div className="text-xl pl-6 md:pl-12 pt-10 h-screen">
-      <h1>👩‍🚀 speakers and workshops</h1><br />
-      <p>conversing your skills help you to add to your digital footprint . . .
-        <br />
-        speaking at api hacks can help you to learn, build and network with<br /> other prominent speakers from
-        our hackathon network.<br />
+      <div className="text-4xl">👩‍🚀 speakers and workshops</div><br /> 
+ 
+        <div className="fontLight">conversing your skills help you to add to your digital footprint . . .<br/> speaking at api hacks can help you to learn, build and network with<br /> other prominent speakers from
+          our hackathon network.<br /></div>
+       
         <br />
         call for speakers are open! <br />let us know about abour your speaker
         proposal.<br />
         <a href={HIDDEN_ROUTES.sessionize.path} target="_blank" rel="noopenner noreferrer">
           <WaveBTN type="btn-fade" text="submit your proposal" />
         </a>
-      </p><br />
+      <br /><br/>
       <b>important dates</b>
       <div className="fontLight">
 

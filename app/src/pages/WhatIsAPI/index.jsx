@@ -38,7 +38,8 @@ const WhatIsAPI = () => {
     <div className="w-full flex flex-col justify-center items-center px-6 md:px-12 my-8 text-base md:text-xl lg:text-2xl leading-6 md:leading-8 lg:leading-10">
 
       <div className="mt-4">
-        <b>🧩 what's an api ?</b> <br />
+        <div className="text-4xl"> <b>🧩 what's an api ?</b> </div>
+
         <div className="fontLight mt-6">
           if you are reading this, we certainly believe, you are
           new to the world of apis.

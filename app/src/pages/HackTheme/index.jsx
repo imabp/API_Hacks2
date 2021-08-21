@@ -4,7 +4,8 @@ const HackThemes = () => {
     const [hint1, setHint1] = React.useState(false);
     return (
         <div className="text-xl px-6 md:px-12 pt-10 h-screen">
-            <h1>🌈 hack-a-theme</h1><br />
+     
+            <div className="text-4xl">🌈 hack-a-theme</div><br/>
             <p>themes are very important to know your project use cases.
                 <br />
                 <div className="fontLight">
@@ -12,9 +13,7 @@ const HackThemes = () => {
                 by providing an open theme. <br />
                 you can choose any tech stack, just make sure, it is presentable.
                 </div>
-                <br />
-                few themes, that we feel are good to go with, are:
-                <br /><br />
+                 <br /><br />
                 💻 developer tools
                 <div className="fontLight">
                     developer tools improves developer experience.<br /> we would love to
@@ -30,10 +29,11 @@ const HackThemes = () => {
                 </div>
                 <br />
                 🎨 open themes
-                <div className="fontLight">
+                <div className="fontLight pb-4">
                     as said, we love your creativity, so if you have any theme in your mind, go ahead
                     with that. just make sure, you describe the problem well.
                 </div>
+                 sponsor tracks: coming soon !! :)<br/>
 
                 <WaveBTN type="btn-fade" text={hint1 ? "ohh wow!" : "need some hints"} onClick={() => { setHint1(!hint1) }} />
 

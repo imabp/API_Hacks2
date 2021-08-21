@@ -12,8 +12,10 @@ const Staff = () => {
             .catch(error => console.log(error))
     }, []);
     return (<>
+      
         <div className=" text-xl pl-6 md:pl-12 pt-10 ">
-           meet our hackathon staff. one thing common in all of us is <br/>we are always up to learn things by building them out... 
+            <div className="text-4xl pb-2">👨‍💼 hackathon staff</div>  
+         we are always up to learn things by building them out... 
         </div>
         <div className="container">
             
