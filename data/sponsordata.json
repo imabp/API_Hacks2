@@ -29,7 +29,12 @@
 
   ],
   "auth":[
-
+    {
+      "organization": "SAWO Labs",
+      "hashtags": ["#sawolabs","#deauthodox"] ,
+      "img": "https://cdn.discordapp.com/attachments/874607271848607754/880488401537757244/sawo_logo.png",
+      "url":"https://sawolabs.com/"
+    }
   ]
  }
 }
