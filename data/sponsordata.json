@@ -1,0 +1,35 @@
+{
+"data":{
+  "gold":[
+    {
+      "organization": "Postman",
+      "hashtags": ["postman","postmanstudent"] ,
+      "img": "https://cdn.discordapp.com/attachments/874607271848607754/880486640181735444/postman-logo-5110850F84-seeklogo.png",
+      "url":"https://postman.com"
+    }
+  ],
+  "silver":[
+  
+  ], 
+  "media":[
+     {
+      "organization": "Sessionize",
+      "hashtags": ["#sessionize","#apihacks"] ,
+      "img": "https://cdn.discordapp.com/attachments/874607271848607754/880487890726043728/sessionize-logo.png",
+      "url":"https://sessionize.com/"
+    },
+    {
+      "organization": "Streamyard",
+      "hashtags": ["#streamyard","#apihacks"] ,
+      "img": "https://cdn.discordapp.com/attachments/874607271848607754/880468346619985920/0637d6d4f97338fe45dfb7a8e4d19753.png",
+      "url":"https://postman.com"
+    }
+  ],
+  "community":[
+
+  ],
+  "auth":[
+
+  ]
+ }
+}
