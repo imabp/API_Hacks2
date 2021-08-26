@@ -2,6 +2,7 @@ import React from 'react'
 import { WaveBTN } from '../../components'
 import {Link} from 'react-router-dom'
 import sendData from './functions/sendData'
+import SponsorCard from './../../components/sponsor'
 const Sponsor = () => {
     const [name, setName] = React.useState('')
     const [email,setEmail] = React.useState('')
@@ -79,10 +80,13 @@ const Sponsor = () => {
                          </>}
                       {loading && <>sending your request...</>}
                     </div>
-                </div>
-                <div className="md:flex md:items-center">
-                   
-                </div>
+                </div><br/>
+                <>
+                    <div class="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mr-5">
+                        <SponsorCard /> <SponsorCard /> <SponsorCard />
+                        <SponsorCard /> <SponsorCard /> <SponsorCard />
+                    </div>
+                </>
 
             </><br /><br /><br />
 
