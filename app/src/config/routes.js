@@ -87,5 +87,16 @@ const ROUTES = [
       </>
     ),
   },
+  {
+    path: "/registration",
+    displayName: "Registration",
+    isExternal: false,
+    exact: true,
+    component: () => (
+      <>
+        <Registration />
+      </>
+    ),
+  },
 ];
 export default ROUTES;
