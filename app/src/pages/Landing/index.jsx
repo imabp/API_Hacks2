@@ -93,11 +93,15 @@ const Landing = () => {
     <a style={{marginRight:'4px'}} href="http://discord.apihacks.co/" target="_blank" rel="noopenner noreferrer">
       <WaveBTN type="btn-discord" text="join us on discord" />
 
-    </a>
-    <Link to="/brochure">
-      <WaveBTN type="btn" text="View Brochure" />
+    </a><Link style={{ marginTop: "-20px" }} to="/register">
+      <WaveBTN type="btn" text="Register" />
+
+    </Link><br />
+    <Link to="/brochure" style={{ marginTop: "-20px"}}>
+      <WaveBTN style={{ marginTop: "-20px" }} type="btn" text="View Brochure" />
 
     </Link>
+    
     <br />  <br />
     <motion.div
       className="absolute bottom-5 pb-6"

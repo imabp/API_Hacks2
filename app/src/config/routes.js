@@ -1,7 +1,7 @@
 import {
   Network,
   HackerMedia,
-  Registration,
+ 
   Staff,
   AboutAPI,
   Sponsors,
@@ -88,16 +88,6 @@ const ROUTES = [
       </>
     ),
   },
-  {
-    path: "/registration",
-    displayName: "Registration",
-    isExternal: false,
-    exact: true,
-    component: () => (
-      <>
-        <Registration />
-      </>
-    ),
-  },
+  
 ];
 export default ROUTES;
