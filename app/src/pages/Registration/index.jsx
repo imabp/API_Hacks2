@@ -1,4 +1,5 @@
 import React from 'react'
+
 import submit from './functions/submit';
 import "./index.css";
 const Registration = () => {
@@ -15,7 +16,10 @@ const Registration = () => {
   const [university, setUniversity] = React.useState('');
   const [year, setYear] = React.useState('');
   const [notes, setNotes] = React.useState(" ");
-  const [submitstatus, setSubmitstatus] = React.useState("Not Yet Submitted");
+  const [errcb, setErr] = React.useState([false, ""]);
+  const [loading, setLoading] = React.useState(false);
+  const [freeze, setFreeze] = React.useState(false);
+  const [success, setSuccess] = React.useState(false);
   const payload = {
     name: FullName,
     email: email,
@@ -175,10 +179,7 @@ const Registration = () => {
   const displayquestion = (step) => {
     return questions[step].question;
   }
-  const acceptAnswer = (step, cb, value) => {
-    cb(value);
-    stepup(step);
-  }
+
   const countStatusfunc = () => {
     let finalstatus = [];
     questions.forEach(i => {
@@ -194,9 +195,25 @@ const Registration = () => {
     }
   }
 
-  const register = (step) => {
+  const register = async (step) => {
+    setErr([false, ""])
+    setLoading(true);
     if (step === questions.length - 1 && countStatusfunc()) {
-      submit(payload, setSubmitstatus)
+      setFreeze(true);
+      const res = await submit(payload, setSuccess, setErr)
+      if (res === 200) {
+        
+        setFreeze(true);
+        setSuccess(true);
+        setLoading(false);
+      }
+      else {
+        setFreeze(false);
+        setLoading(false);
+      }
+    } else {
+      setFreeze(false);
+      setLoading(false);
     }
   }
   const formatField = (question) => {
@@ -204,7 +221,7 @@ const Registration = () => {
 
     switch (type) {
       case 'input': return (<>
-        <input onKeyDown={(e) => {
+        <input disabled={success} onKeyDown={(e) => {
           if (e.keyCode === 13) {
             stepup(position, setPosition);
           }
@@ -220,7 +237,7 @@ const Registration = () => {
       case 'select':
         const { defaultvalue } = question
         return (<>
-          <select defaultValue={defaultvalue} value={value} onChange={(e) => { cb(e.target.value) }} className=" w-10/12 p-4 mr-9">
+          <select disabled={success} defaultValue={defaultvalue} value={value} onChange={(e) => { cb(e.target.value) }} className=" w-10/12 p-4 mr-9">
             <option value="">Select</option>
             {options.map(i => {
               return (<option key={i} value={i}>{i}</option>);
@@ -231,11 +248,11 @@ const Registration = () => {
       default: return (<></>);
     }
   }
- 
+
   return (
 
 
-    <div className=" text-xl pl-6 md:pl-12 pt-10 h-screen">
+    <div className="mb-12 pb-6 text-xl pl-6 md:pl-12 pt-10 h-screen">
       <div className="text-4xl">✏ Registrations </div><br />
       <div>
         {
@@ -250,30 +267,44 @@ const Registration = () => {
 
 
       </div>
-      <button
+      {!success && <> <button
         className="button mt-5 btn bg-blue-300"
         onClick={() => { position > 0 && stepdown(position, setPosition) }}
+        disabled={success}
       >
         {"<"}
       </button>&nbsp;
-      <button
-        className="button mt-5 btn bg-blue-300"
-        onClick={() => { position < questions.length - 1 ? stepup(position, setPosition) : register(position) }}
-      >
-        {position < questions.length - 1 ? "Next" : countStatusfunc() ? "Register" : "You missed something"}
-      </button>
 
+        <button
+          className="button mt-5 btn bg-blue-300"
+          onClick={() => {
+            position < questions.length - 1 ? stepup(position, setPosition) : register(position)
+
+          }}
+          disabled={freeze || success}
+
+        >
+          {position < questions.length - 1 ? "Next" : countStatusfunc() ? "Register" : "You missed something"}
+
+        </button></>
+      }
+      
+      {
+        loading && <>sending...</>
+     
+      }<br />
+      <br />
       <div
         className="py-4 mt-12"
         style={{
           transition: "all 1s ease"
         }}
-      >     {submitstatus.toLowerCase()} <br />
+      >
         {
-          questions.map((question, index) => {
+          !success && questions.map((question, index) => {
             return (<>
 
-              <span style={{ cursor: "pointer",  }}
+              <span style={{ cursor: "pointer", }}
                 className="text-base"
                 onClick={() => { setPosition(index) }}>
                 {question.optional ? (question.status ? "✅" : "⚪") : question.status ? "✅" : (position > index ? "❌" : "🟡")}
@@ -282,10 +313,29 @@ const Registration = () => {
             </>)
           }
           )}</div>
-      <p className="text-base">
+      {errcb[0] &&
+       
+        <div className="text-base w-10/12 mt-6 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+            <strong className="font-bold">Oh no! </strong>
+            <span className="block sm:inline">{errcb[1]}</span>
+          </div>
 
+  }
+      {
+        success &&
+          <div className="text-base mt-10 w-10/12 bg-green-200 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
+            <div className="flex">
+              <div>
+                <p className="font-bold">👋 {FullName.toLowerCase()}, you have successfully registered for api hacks 2.0</p>
+                <p className="text-sm">we will be reaching out on your mail shortly.<br />
+                  find the announcements at <a href="https://discord.apihacks.co" style={{ color: "gray" }} target="_blank" rel="noopenner noreferrer"> discord</a> .</p>
+              </div>
+            </div>
+          </div>
 
-      </p></div>
+       
+      }
+    </div>
   )
 }
 

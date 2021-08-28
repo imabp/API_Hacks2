@@ -90,13 +90,13 @@ const Landing = () => {
       build your <br />
       digital footprint as <br />a student developer
     </motion.div>
-    <a style={{marginRight:'4px'}} href="http://discord.apihacks.co/" target="_blank" rel="noopenner noreferrer">
-      <WaveBTN type="btn-discord" text="join us on discord" />
-
-    </a><Link style={{ marginTop: "-20px" }} to="/register">
+    <Link style={{ marginTop: "-20px" }} to="/register">
       <WaveBTN type="btn" text="Register" />
 
-    </Link><br />
+    </Link>&nbsp;&nbsp;<a style={{ marginRight: '4px' }} href="http://discord.apihacks.co/" target="_blank" rel="noopenner noreferrer">
+      <WaveBTN type="btn-discord" text="join us on discord" />
+
+    </a><br />
     <Link to="/brochure" style={{ marginTop: "-20px"}}>
       <WaveBTN style={{ marginTop: "-20px" }} type="btn" text="View Brochure" />
 
