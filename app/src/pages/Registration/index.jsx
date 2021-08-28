@@ -135,25 +135,25 @@ const Registration = () => {
       defaultvalue: "No"
     },
     {
-      question: `What's your ${student ? "University/School" : "Company"} name?`,
+      question: `What's your ${student==="Yes" ? "University/School" : "Company"} name?`,
       cb: setUniversity,
       status: university.trim() != "" ? true : false,
       optional: false
       , type: "input"
       , value: university,
       options: {
-        placeholder: student ? "My University" : "The Company"
+        placeholder: student==="Yes" ? "My University" : "The Company"
       }
     },
     {
-      question: `What's your ${student ? "Year/Grade" : "role at company"}?`,
+      question: `What's your ${student==="Yes" ? "Year/Grade" : "role at company"}?`,
       cb: setYear,
       status: year.trim() != "" ? true : false,
       optional: false,
       type: "input",
       value: year,
       options: {
-        placeholder: student ? "Freshman" : "Software Engineer"
+        placeholder: student === "Yes" ? "Freshman" : "Software Engineer"
       }
     },
     {
