@@ -1,7 +1,7 @@
 import {
   Network,
   HackerMedia,
-  Registration,
+ 
   Staff,
   AboutAPI,
   Sponsors,
@@ -88,5 +88,6 @@ const ROUTES = [
       </>
     ),
   },
+  
 ];
 export default ROUTES;

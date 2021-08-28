@@ -1,6 +1,7 @@
 import React from "react";
 import Brochure from "../pages/Brochure";
 import BrandAssets from "./../core/brand_assets";
+import  Registration  from "../pages/Registration";
 const HIDDEN_ROUTES = {
   sessionize: {
     path: "https://sessionize.com/apihacksworkshops/",
@@ -27,6 +28,17 @@ const HIDDEN_ROUTES = {
     component: () => (
       <>
         <BrandAssets />
+      </>
+    ),
+  },
+  register:{
+    path: "/register",
+    displayName: "Register",
+    isExternal: false,
+    exact: true,
+    component: () => (
+      <>
+        <Registration />
       </>
     ),
   },
