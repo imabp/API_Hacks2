@@ -1,6 +1,11 @@
 import React from 'react'
 
 import submit from './functions/submit';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import { faCircle } from "@fortawesome/free-solid-svg-icons";
+import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";
+
 import "./index.css";
 const Registration = () => {
   const [position, setPosition] = React.useState(0);
@@ -135,18 +140,18 @@ const Registration = () => {
       defaultvalue: "No"
     },
     {
-      question: `What's your ${student==="Yes" ? "University/School" : "Company"} name?`,
+      question: `What's your ${student === "Yes" ? "University/School" : "Company"} name?`,
       cb: setUniversity,
       status: university.trim() != "" ? true : false,
       optional: false
       , type: "input"
       , value: university,
       options: {
-        placeholder: student==="Yes" ? "My University" : "The Company"
+        placeholder: student === "Yes" ? "My University" : "The Company"
       }
     },
     {
-      question: `What's your ${student==="Yes" ? "Year/Grade" : "role at company"}?`,
+      question: `What's your ${student === "Yes" ? "Year/Grade" : "role at company"}?`,
       cb: setYear,
       status: year.trim() != "" ? true : false,
       optional: false,
@@ -202,7 +207,7 @@ const Registration = () => {
       setFreeze(true);
       const res = await submit(payload, setSuccess, setErr)
       if (res === 200) {
-        
+
         setFreeze(true);
         setSuccess(true);
         setLoading(false);
@@ -250,92 +255,96 @@ const Registration = () => {
   }
 
   return (
+    <>
+
+      <div className="mb-12 pb-6 text-xl pl-6 md:pl-12 pt-10 h-screen">
+        <div className="text-4xl mt-12 ">✏ Registrations </div><br />
+        <div className="mt-8">
+          <div>
+            {
+              displayquestion(position).toLowerCase()
+            }
+            <br />
+            <div className="w-full mt-5">
+              {formatField(questions[position])}
 
 
-    <div className="mb-12 pb-6 text-xl pl-6 md:pl-12 pt-10 h-screen">
-      <div className="text-4xl">✏ Registrations </div><br />
-      <div>
-        {
-          displayquestion(position).toLowerCase()
-        }
-        <br />
-        <div className="w-full mt-5">
-          {formatField(questions[position])}
+            </div>
 
 
-        </div>
-
-
-      </div>
-      {!success && <> <button
-        className="button mt-5 btn bg-blue-300"
-        onClick={() => { position > 0 && stepdown(position, setPosition) }}
-        disabled={success}
-      >
-        {"<"}
-      </button>&nbsp;
-
-        <button
-          className="button mt-5 btn bg-blue-300"
-          onClick={() => {
-            position < questions.length - 1 ? stepup(position, setPosition) : register(position)
-
-          }}
-          disabled={freeze || success}
-
-        >
-          {position < questions.length - 1 ? "Next" : countStatusfunc() ? "Register" : "You missed something"}
-
-        </button></>
-      }
-      
-      {
-        loading && <>sending...</>
-     
-      }<br />
-      <br />
-      <div
-        className="py-4 mt-12"
-        style={{
-          transition: "all 1s ease"
-        }}
-      >
-        {
-          !success && questions.map((question, index) => {
-            return (<>
-
-              <span style={{ cursor: "pointer", }}
-                className="text-base"
-                onClick={() => { setPosition(index) }}>
-                {question.optional ? (question.status ? "✅" : "⚪") : question.status ? "✅" : (position > index ? "❌" : "🟡")}
-              </span>
-
-            </>)
-          }
-          )}</div>
-      {errcb[0] &&
-       
-        <div className="text-base w-10/12 mt-6 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
-            <strong className="font-bold">Oh no! </strong>
-            <span className="block sm:inline">{errcb[1]}</span>
           </div>
+          {!success && <> <button
+            className="button mt-5 btn bg-blue-300"
+            onClick={() => { position > 0 && stepdown(position, setPosition) }}
+            disabled={success}
+          >
+            {"<"}
+          </button>&nbsp;
 
-  }
-      {
-        success &&
-          <div className="text-base mt-10 w-10/12 bg-green-200 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
-            <div className="flex">
-              <div>
-                <p className="font-bold">👋 {FullName.toLowerCase()}, you have successfully registered for api hacks 2.0</p>
-                <p className="text-sm">we will be reaching out on your mail shortly.<br />
-                  find the announcements at <a href="https://discord.apihacks.co" style={{ color: "gray" }} target="_blank" rel="noopenner noreferrer"> discord</a> .</p>
+            <button
+              className="button mt-5 btn bg-blue-300"
+              onClick={() => {
+                position < questions.length - 1 ? stepup(position, setPosition) : register(position)
+
+              }}
+              disabled={freeze || success}
+
+            >
+              {position < questions.length - 1 ? "Next" : countStatusfunc() ? "Register" : "You missed something"}
+
+            </button></>
+          }
+          <br />
+          <br />
+          <div
+            className="py-4 mt-12"
+            style={{
+              transition: "all 1s ease"
+            }}
+          >
+            {
+              !success && questions.map((question, index) => {
+                return (<>
+
+                  <span style={{ cursor: "pointer", }}
+                    className="text-base"
+                    onClick={() => { setPosition(index) }}>
+                    {question.optional ? (question.status ? 
+                    <FontAwesomeIcon style={{ color: 'green', fontSize: "1.5rem" }} icon={faCheckCircle} /> :
+                     <FontAwesomeIcon style={{ color: '#c2c2c2', fontSize: "1.5rem" }} icon={faCircle} />) :
+                      question.status ? <FontAwesomeIcon style={{ color: 'green', fontSize: "1.5rem" }} icon={faCheckCircle} /> : 
+                      (position > index ? <FontAwesomeIcon style={{ color: 'red', fontSize: "1.5rem" }} icon={faTimesCircle} /> : 
+                      <FontAwesomeIcon style={{ color: '#1ba8f0', fontSize: "1.5rem" }} icon={faCircle} />)}
+                  </span>
+
+                </>)
+              }
+              )}</div>
+          {errcb[0] &&
+
+            <div className="text-base w-10/12 mt-6 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+              <strong className="font-bold">Oh no! </strong>
+              <span className="block sm:inline">{errcb[1]}</span>
+            </div>
+
+          }
+          {
+            success &&
+            <div className="text-base mt-10 w-10/12 bg-green-200 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
+              <div className="flex">
+                <div>
+                  <p className="font-bold">👋 {FullName.toLowerCase()}, you have successfully registered for api hacks 2.0</p>
+                  <p className="text-sm">we will be reaching out on your mail shortly.<br />
+                    find the announcements at <a href="https://discord.apihacks.co" style={{ color: "gray" }} target="_blank" rel="noopenner noreferrer"> discord</a> .</p>
+                </div>
               </div>
             </div>
-          </div>
 
-       
-      }
-    </div>
+
+          }
+        </div>
+      </div>
+    </>
   )
 }
 
