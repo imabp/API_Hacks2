@@ -260,7 +260,7 @@ const Registration = () => {
         className="button mt-5 btn bg-blue-300"
         onClick={() => { position < questions.length - 1 ? stepup(position, setPosition) : register(position) }}
       >
-        {position < questions.length - 1 ? ">" : countStatusfunc() ? "Register" : "You missed something"}
+        {position < questions.length - 1 ? "Next" : countStatusfunc() ? "Register" : "You missed something"}
       </button>
 
       <div
