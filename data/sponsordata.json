@@ -6,6 +6,12 @@
       "hashtags": ["#postman","#postmanstudent"] ,
       "img": "https://cdn.discordapp.com/attachments/874607271848607754/880486640181735444/postman-logo-5110850F84-seeklogo.png",
       "url":"https://postman.com"
+    },
+    {
+      "organization": "Github",
+      "hashtags": ["#github","#githubstudentpack"] ,
+      "img": "https://media.discordapp.net/attachments/874607271848607754/882120994624507904/images-removebg-preview.png",
+      "url":"https://github.com"
     }
   ],
   "silver":[
