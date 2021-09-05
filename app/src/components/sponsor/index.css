@@ -20,8 +20,14 @@
   color: #fff;
 
 }
+.typebox-bronze{
+     background: linear-gradient(87.74deg, #E54961 0%, #FD5853 100%);
+  color: #fff;
+
+}
 .typebox-media {
   background: #ff388c;
+  color:#fff
 }
 .typebox-auth {
   background: #1f4e58;
