@@ -28,9 +28,9 @@ const Sponsor = () => {
             <div className="text-4xl">🧏‍♂️ Sponsors </div><br />
 
             wanna be one of our awesome sponsors?<br />
-            <span style={{ color: 'gray', cursor: 'pointer' }} onClick={() => { setShowForm(!showForm) }}>{showForm ? "view sponsors" : "fill up the form"}</span>    &nbsp;&nbsp;&nbsp;
+            <span style={{ color: 'gray', cursor: 'pointer' }} onClick={() => { setShowForm(!showForm) }}>{showForm ? <WaveBTN type="btn-fade" text="view sponsors" /> : <WaveBTN type="btn-fade" text="sponsor form" />}</span>    &nbsp;&nbsp;&nbsp;
             <Link to="/brochure">
-                <span style={{ color: 'gray' }}>see our brochure..</span>
+                <WaveBTN type="btn-fade" text="see our brochure.."/>
             </Link>
             <>
                 {sponsordata && !showForm && <>
@@ -48,6 +48,21 @@ const Sponsor = () => {
                         {sponsordata.media && sponsordata.media.map((item, index) => {
 
                             return (<><SponsorCard type="media" organization={item.organization} hashtags={item.hashtags} img={item.img} url={item.url} /></>)
+                        })
+                        }
+                        {sponsordata.silver && sponsordata.silver.map((item, index) => {
+
+                            return (<><SponsorCard type="silver" organization={item.organization} hashtags={item.hashtags} img={item.img} url={item.url} /></>)
+                        })
+                        }
+                        {sponsordata.bronze && sponsordata.bronze.map((item, index) => {
+
+                            return (<><SponsorCard type="bronze" organization={item.organization} hashtags={item.hashtags} img={item.img} url={item.url} /></>)
+                        })
+                        }
+                        {sponsordata.community && sponsordata.community.map((item, index) => {
+
+                            return (<><SponsorCard type="community" organization={item.organization} hashtags={item.hashtags} img={item.img} url={item.url} /></>)
                         })
                         }
                     </div>
