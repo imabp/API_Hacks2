@@ -15,8 +15,16 @@
     }
   ],
   "silver":[
-  
+    
   ], 
+  "bronze":[
+    {
+      "organization": "Scrimba",
+      "hashtags": ["#scrimba","#apihacks"] ,
+      "img": "https://cdn.discordapp.com/attachments/874607271848607754/884015007686352906/EU5aPRQ776KISHhbbs3xGO8ol.png",
+      "url":"https://scrimba.com/"
+    }
+  ],
   "media":[
      {
       "organization": "Sessionize",
@@ -32,7 +40,7 @@
     }
   ],
   "community":[
-
+    
   ],
   "auth":[
     {
