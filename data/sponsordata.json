@@ -15,11 +15,23 @@
     }
   ],
   "silver":[
+    {
+      "organization": "Digital Ocean",
+      "hashtags": ["#do","#digitalocean"],
+      "img": "https://cdn.discordapp.com/attachments/874607271848607754/886184454777868288/unknown.png",
+      "url":"https://try.digitalocean.com/developer-cloud"
+    },
      {
       "organization": "Egghead.io",
-      "hashtags": ["#scrimba","#apihacks"] ,
+      "hashtags": ["#egghead","#apihacks"] ,
       "img": "https://cdn.discordapp.com/attachments/874607271848607754/886142422474702898/286fcd415deb9f4134f04584b7c21927e5047b68.png",
       "url":"https://egghead.io/"
+    },
+    {
+      "organization": "Symbl.ai",
+      "hashtags": ["#symblai","#symblai"],
+      "img": "https://cdn.discordapp.com/attachments/874607271848607754/886185759571324979/unknown.png",
+      "url":"https://symbl.ai/"
     }
   ], 
   "bronze":[
