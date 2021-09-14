@@ -62,6 +62,12 @@
       "hashtags": ["#devstrons","#apihacks"] ,
       "img": "https://cdn.discordapp.com/attachments/885244468985483335/885244519254224916/ffia.png",
       "url":"https://linktr.ee/devstrons"
+     },
+      {
+      "organization": "Coders Lodge",
+      "hashtags": ["#coderslodge","#apihacks"] ,
+      "img": "https://cdn.discordapp.com/attachments/874607271848607754/887201353988972554/CodersLodge-removebg-preview.png",
+      "url":"https://coderslodge.in/home"
      }
   ],
   "auth":[
