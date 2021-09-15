@@ -41,6 +41,18 @@
       "img": "https://cdn.discordapp.com/attachments/874607271848607754/877984664718049290/connection.png",
       "text": "A cli parser built using ink",
       "link": "https://github.com/Souvikns/ink-router-cli"
+    },
+    {
+      "title": "HTTP 101",
+      "img": "https://cdn.discordapp.com/attachments/874607271848607754/887750137831628820/unknown.png",
+      "text": "Everything about HTTP and Status",
+      "link": "https://dev.to/uzairali10/hyper-text-transfer-protocol-http-101-4jp4"
+    },
+    {
+      "title": "REST Architecture 101",
+      "img": "https://cdn.discordapp.com/attachments/874607271848607754/887750235407925268/unknown.png",
+      "text": "REST APIs and Architecture 101",
+      "link": "https://dev.to/uzairali10/rest-apis-and-architecture-101-236f"
     }
   ]
 }
