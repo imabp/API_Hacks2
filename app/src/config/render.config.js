@@ -37,6 +37,12 @@ const RenderConfig = () => {
             exact={HiddenRoutes.register.exact}
             children={<Registration />}
           />
+        <Route
+            key={HiddenRoutes.evangelist.path}
+            path={HiddenRoutes.evangelist.path}
+            exact={HiddenRoutes.evangelist.exact}
+            children={<HiddenRoutes.evangelist.component />}
+          />
         </>
       }
     </>
