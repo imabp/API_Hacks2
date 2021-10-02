@@ -1,0 +1,34 @@
+{
+    "evangelist": [
+        {
+            "name": "Lenin Kennedy",
+            "img": "",
+            "university": "Vellore Institute of Technology, Chennai",
+            "social": ""
+        },
+        {
+            "name": "Janki Bariya",
+            "img": "",
+            "university": "Sardar Vallabhbhai Patel Institute of technology ",
+            "social": ""
+        },
+        {
+            "name": "Pooja Gera",
+            "img": "",
+            "university": "Indira Gandhi Delhi Technical University for Women / GDSC IGDTUW ",
+            "social": ""
+        },
+        {
+            "name": "Shreya Bhat",
+            "img": "",
+            "university": "Sai Vidya Institute of Technology",
+            "social": ""
+        },
+        {
+            "name": "Aman Shrivastava",
+            "img": "",
+            "university": "Rajiv Gandhi Proudyogiki Vishwavidyalaya",
+            "social": ""
+        }
+    ]
+}
