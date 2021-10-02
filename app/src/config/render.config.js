@@ -7,6 +7,7 @@ import { Registration } from "../pages";
 
 const RenderConfig = () => {
   const BrandAssets = HiddenRoutes.brandassets.component;
+const Evangelist = HiddenRoutes.evangelist.component
   return (
     <>
       {ROUTES.map((route) => (
@@ -36,6 +37,12 @@ const RenderConfig = () => {
             path={HiddenRoutes.register.path}
             exact={HiddenRoutes.register.exact}
             children={<Registration />}
+          />
+        <Route
+            key={HiddenRoutes.evangelist.path}
+            path={HiddenRoutes.evangelist.path}
+            exact={HiddenRoutes.evangelist.exact}
+            children={<Evangelist/>}
           />
         </>
       }

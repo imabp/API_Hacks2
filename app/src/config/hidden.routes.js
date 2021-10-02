@@ -2,6 +2,7 @@ import React from "react";
 import Brochure from "../pages/Brochure";
 import BrandAssets from "./../core/brand_assets";
 import  Registration  from "../pages/Registration";
+import  Evangelist  from "../pages/Evangelist";
 const HIDDEN_ROUTES = {
   sessionize: {
     path: "https://sessionize.com/apihacksworkshops/",
@@ -42,7 +43,17 @@ const HIDDEN_ROUTES = {
       </>
     ),
   },
-
+  evangelist:{
+    path: "/evangelists",
+    displayName: "Evangelist",
+    isExternal: false,
+    exact: true,
+    component: () => (
+      <>
+        <Evangelist />
+      </>
+    ),
+  },
   //   {
   //     path: "/hiring",
   //     displayName: "Network and Hiring",
