@@ -26,6 +26,12 @@
       "hashtags": ["#symblai","#symblai"],
       "img": "https://cdn.discordapp.com/attachments/874607271848607754/886185759571324979/unknown.png",
       "url":"https://symbl.ai/"
+    },
+    {
+      "organization": ".XYZ",
+      "hashtags": ["#genxyz","#xyz"],
+      "img": "https://media.discordapp.net/attachments/833003024380592209/898561990874791986/xyz-logo-color.png?width=243&height=142",
+      "url":"https://gen.xyz/"
     }
   ], 
   "bronze":[
