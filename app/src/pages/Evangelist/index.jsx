@@ -21,7 +21,7 @@ const Evangelists = () => {
         <div className="container">
             
             {
-                StaffData.staff && StaffData.evangelist.map((member, id) => {
+                StaffData.evangelist && StaffData.evangelist.map((member, id) => {
                     return (
                         <>
                         <a href={member.social} target="_blank" rel="noreferrer">
