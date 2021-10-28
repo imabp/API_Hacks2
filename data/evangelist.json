@@ -7,9 +7,9 @@
             "social": "https://www.linkedin.com/in/lenink/"
         },
         {
-            "name": "Janki Bariya",
-            "img": "",
-            "university": "Sardar Vallabhbhai Patel Institute of technology ",
+            "name": "Shreya Bhat",
+            "img": "https://cdn.discordapp.com/attachments/897099784870035457/903143297067933696/SquareQuick_20211028101821707.jpg",
+            "university": "Sai Vidya Institute of Technology",
             "social": ""
         },
         {
@@ -17,18 +17,6 @@
             "img": "https://cdn.discordapp.com/attachments/894573743513407508/894573795141091408/pooja_image_podium.png",
             "university": "Indira Gandhi Delhi Technical University for Women / GDSC IGDTUW ",
             "social": "https://twitter.com/poojagera0_0"
-        },
-        {
-            "name": "Shreya Bhat",
-            "img": "",
-            "university": "Sai Vidya Institute of Technology",
-            "social": ""
-        },
-        {
-            "name": "Aman Shrivastava",
-            "img": "",
-            "university": "Rajiv Gandhi Proudyogiki Vishwavidyalaya",
-            "social": ""
         }
     ]
 }
